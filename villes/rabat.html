@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabat</title>
+    <link rel="icon" href="../files/logo.png">
+    <link rel="stylesheet" href="../css/rabat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+        
+
+</head>
+  <body>
+    <script src="../javaScript/script-final.js"></script>
+    <header>
+    <nav>
+        <img src="../files/logo.png" class="logo" alt="Logo" title="Découvre le Maroc">
+
+       <div class="links">
+                <ul class="navbar">
+                    <li><a id="nav-home" href="../index-final.html" class="active">Accueil</a></li>
+                    <li><a id="nav-ville" href="../index-final.html#ville">Villes</a></li>
+                    <li><a id="nav-contact" href="../pages_agence/contact.html">Contact</a></li>
+
+                    <!-- Recherche -->
+                    <li>
+                        <div class="search-container">
+                            <i class='bx bx-search' id="searchIcon"></i>
+                            <input type="text" id="searchInput" placeholder="Rechercher...">
+                        </div>
+                    </li>
+
+                    <!-- Météo -->
+                    <li class="weather-wrapper">
+                        <button id="showWeatherBtn" class="weather-toggle">Météo</button>
+
+                        <div class="weather-card" id="weatherCard" style="display: none;">
+                            <h2 id="weather-title">Météo</h2>
+                            <input type="text" id="city" placeholder="Entrez une ville">
+                            <button id="btn">Chercher</button>
+                            <div id="result"></div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <select id="langSelect">
+                            <option value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</header>
+    <main>
+      
+      
+      <section class="section1">
+        <div class="slide1">
+          <div class="titre">
+            <h1>Bienvenue à Rabat</h1>
+            <p>Rabat, une capitale à vivre</p>
+          </div>
+          <img src="../files/image_rabat/hassan.webp" />
+        </div>
+
+        <div class="slide1">
+          <div class="titre">
+            <h1>Bienvenue à Rabat</h1>
+            <p>Rabat, une capitale à vivre</p>
+          </div>
+          <img src="../files/image_rabat/oudayas.jpg" />
+        </div>
+
+        <div class="slide1">
+          <div class="titre">
+            <h1>Bienvenue à Rabat</h1>
+            <p>Rabat, une capitale à vivre</p>
+          </div>
+          <img src="../files/image_rabat/oude.jpg" />
+        </div>
+
+        <div class="slide1">
+          <div class="titre">
+            <h1>Bienvenue à Rabat</h1>
+            <p>Rabat, une capitale à vivre</p>
+          </div>
+          <img src="../files/image_rabat/theatre.jpg" />
+        </div>
+        <div class="slide1">
+          <div class="titre">
+            <h1>Bienvenue à Rabat</h1>
+            <p>Rabat, une capitale à vivre</p>
+          </div>
+          <img src="../files/image_rabat/hassan.webp" />
+        </div>
+      </section>
+
+      <div class="titre2">
+        <h2>Rabat, capitale moderne chargée d'histoire</h2>
+      </div>
+      
+      
+      <div class="section2">
+        <div class="parag">
+          <p>
+            <span class="highlight">Rabat</span>, est l’une des plus
+            prestigieuses
+            <span class="highlight">villes impériales du Maroc</span>, fondée au
+            <span class="highlight">12ᵉ siècle</span> par les Almohades et
+            reconnue aujourd’hui comme une capitale moderne au riche héritage
+            historique. Son atmosphère particulière provient de l’harmonie entre
+            son passé majestueux et son développement contemporain. En entrant
+            dans la ville, on découvre des monuments emblématiques tels que la
+            <span class="highlight">Tour Hassan</span> et le
+            <span class="highlight">Mausolée Mohammed V</span>, chefs-d’œuvre de
+            l’architecture marocaine. Plus au nord se dresse la
+            <span class="highlight">Kasbah des Oudayas</span>, inscrite au
+            patrimoine mondial de <span class="highlight">l’UNESCO</span>, avec
+            ses ruelles blanches et bleues et ses vues imprenables sur
+            l’Atlantique. À quelques pas, l’ancienne nécropole du
+            <span class="highlight">Chellah</span> dévoile des vestiges romains
+            et mérinides enveloppés de jardins et de cigognes. Rabat est aussi
+            une capitale culturelle majeure, accueillant d’importants événements
+            comme le <span class="highlight">Festival Mawazine</span>, et se
+            distingue par sa
+            <span class="highlight">scène artistique, ses musées</span>, son
+            <span class="highlight">théâtre</span> et ses nombreux espaces
+            verts. Ville sereine et élégante, elle reflète un équilibre unique
+            entre tradition marocaine et modernité.
+          </p>
+        </div>
+        <div class="comments-grid">
+          <div class="comment-card">
+            <div class="info">
+              <img src="../files/image_rabat/per.png" />
+              <p>Sara</p>
+            </div>
+            <div class="centent">
+              <p class="comment">
+                <span class="quote">“</span>Très belle expérience ! J’ai
+                vraiment apprécié ma visite, l’ambiance était agréable et le
+                service impeccable. Je recommande vivement!
+                <span class="quote">”</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <section class="section3">
+        <h1 class="cart-titre">Préparez Votre Séjour à Rabat</h1>
+        <div class="cartes">
+          <!--activiter carte-->
+          <div class="carte1">
+            <img src="../files/image_rabat/act.jpg" />
+            <h2>Activites</h2>
+            <p>
+              On vous propose quelques activités à faire à Rabat pour vous
+              amuser.
+            </p>
+            <div class="btn"> <a  href="#activites" >Decouvrire</a></div>
+          </div>
+          <!--lieu carte-->
+          <div class="carte1">
+            <img src="../files/image_rabat/hassan.jpg" />
+            <h2>À Visiter</h2>
+            <p>
+              On vous propose une sélection des meilleurs lieux à visiter à
+              Rabat pour explorer la ville autrement.
+            </p>
+            <div class="btn"> <a  href="#lieu" >Decouvrire</a></div>
+          </div>
+          <div class="carte1">
+            <img src="../files/image_rabat/deb.jpg" />
+            <h2>Hôtels</h2>
+            <p>
+              Découvrez notre sélection des meilleurs hôtels à Rabat pour un
+              séjour confortable et mémorable.
+            </p>
+            <div class="btn"> <a  href="#hotel" >Decouvrire</a></div>
+          </div>
+          <div class="carte1">
+            <img src="../files/image_rabat/rest.jpg" />
+            <h2>Restaurants</h2>
+            <p>
+              Savourez les meilleures adresses culinaires de Rabat et découvrez
+              des plats qui éveilleront vos papilles.
+            </p>
+          
+          <div class="btn"> <a  href="#rest" >Decouvrire</a></div>
+           
+          </div>
+        </div>
+      </section>
+      
+      <!--vorte des activites-->
+      <h3 class="detail-title">Activités</h3>
+      <section class="detail-section" id="activites">
+        <div class="detail-container">
+          <!-- Flèche gauche -->
+          <button class="arrow left">&#10094;</button>
+          <!-- Piste des slides -->
+          <div class="slide-track">
+            <!-- SLIDE 1:kayak -->
+            <div class="slide active">
+              <img src="../files/image_rabat/kayak.jpg" alt="kayak" />
+              <div class="detail-text">
+                <h2>KAYAK</h2>
+                <p>
+                  Profitez d’une balade en kayak sur le Bouregreg, au départ de
+                  la Marina Bouregreg. Activité accessible à tous, idéale pour
+                  découvrir Rabat autrement.
+                </p>
+                <p>
+                  📍 Où le faire : Marina Bouregreg – clubs nautiques et
+                  locations disponibles sur place.<br />
+                  💰 Prix : à partir de 50 MAD la location / environ 100 MAD
+                  pour 1 heure.<br />
+                  ℹ️ Infos pratiques : gilet de sauvetage fourni, réservation
+                  conseillée, activité possible pour débutants.<br />
+                </p>
+              </div>
+            </div>
+            <!-- SLIDE 2:bateau -->
+            <div class="slide">
+              <img src="../files/image_rabat/bateau.jpg" alt="bateu-luxe" />
+              <div class="detail-text">
+                <h2>Toure en bateau de luxe</h2>
+                <p>
+                  Découvrez Rabat dans un confort absolu grâce à une visite
+                  privée en bateau de luxe, accompagnée d’un guide. Une
+                  expérience premium idéale pour couples, familles ou petits
+                  groupes.
+                </p>
+                <p>
+                  📍 Départ : Marina Bouregreg – embarcation privée avec
+                  guide.<br />
+                  💰 Prix : à partir de 500 MAD par personne (selon durée et
+                  options).<br />
+                  ℹ️ Infos pratiques : bateau privatisé, guide inclus,
+                  réservation obligatoire, idéal pour photos et sorties
+                  spéciales.<br />
+                </p>
+              </div>
+            </div>
+            <!-- SLIDE 3:floka -->
+            <div class="slide">
+              <img src="../files/image_rabat/floka.jpg" />
+              <div class="detail-text">
+                <h2>Balade en Barque Traditionnelle</h2>
+                <p>
+                  Découvrez le charme authentique du Bouregreg à bord d’une
+                  flouka, la barque traditionnelle utilisée par les pêcheurs
+                  locaux. Une expérience simple et pittoresque qui offre une vue
+                  magnifique sur la Kasbah des Oudayas et les rives de Rabat et
+                  Salé.
+                </p>
+                <p>
+                  📍 Départ : Port traditionnel du Bouregreg, près des
+                  Oudayas.<br />
+                  💰 Prix : environ 20–30 MAD par personne pour une traversée,
+                  50–80 MAD pour une petite balade.<br />
+                  ℹ️ Infos pratiques : tours rapides ou petites balades
+                  possibles, idéal pour photos, activité ouverte toute la
+                  journée selon la marée.<br />
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Flèche droite -->
+          <button class="arrow right">&#10095;</button>
+        </div>
+      </section>
+
+
+      <!--vorte des lieux-->
+      <h3 class="detail-title" >Endroits</h3>
+      <section class="detail-section" id="lieu">
+        <div class="detail-container">
+          <!-- Flèche gauche -->
+          <button class="arrow left">&#10094;</button>
+          <!-- Piste des slides -->
+          <div class="slide-track">
+            <!-- SLIDE 1:hassan -->
+            <div class="slide active">
+              <img src="../files/image_rabat/hassan2.jpg" />
+              <div class="detail-text">
+                <h2>La Tour Hassan</h2>
+                <p>
+                  Le monument emblématique de Rabat. Un minaret inachevé du XIIᵉ
+                  siècle entouré d’une vaste esplanade et de centaines de
+                  colonnes.
+                </p>
+              </div>
+            </div>
+            <!-- SLIDE 2:darih -->
+            <div class="slide">
+              <img src="../files/image_rabat/darih.jpg" />
+              <div class="detail-text">
+                <h2>Le Mausolée Mohammed V</h2>
+                <p>
+                  Juste en face de la Tour Hassan. Un chef-d’œuvre architectural
+                  marocain : marbre blanc, bois sculpté, calligraphies.
+                </p>
+              </div>
+            </div>
+            <!-- SLIDE 3:oudaya -->
+            <div class="slide">
+              <img src="../files/image_rabat/oudaya2.jpg" />
+              <div class="detail-text">
+                <h2>La Kasbah des Oudayas</h2>
+                <p>
+                  Un incontournable absolu ! Ruelles blanches et bleues, vue
+                  magnifique sur l’océan, jardins andalous et une histoire
+                  fascinante.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Flèche droite -->
+          <button class="arrow right">&#10095;</button>
+        </div>
+      </section>
+      <!--vorte des hotels-->
+      <h3 class="detail-title" >Hébergement</h3>
+      <section class="detail-section" id="hotel">
+        <div class="detail-container">
+          <!-- Flèche gauche -->
+          <button class="arrow left">&#10094;</button>
+          <!-- Piste des slides -->
+          <div class="slide-track">
+            <!-- SLIDE 1:hotel1 -->
+            <div class="slide active">
+              <img src="../files/image_rabat/hotel3.jpg" />
+              <div class="detail-text">
+                <h2><a class="li"
+                href="https://www.google.com/search?q=Riad+Oudaya&client=opera&hs=Y6r&sca_esv=edc10655191454d0&sxsrf=AE3"
+                target="_blank">Riad Oudaya</a></h2>
+                <p>
+                  Un riad charmant situé au cœur de la Kasbah des Oudayas /
+                  médina de Rabat — idéal pour ceux qui souhaitent plonger dans
+                  l’ambiance historique et authentique de la ville. Le bâtiment
+                  conserve un style traditionnel marocain : patio interne,
+                  zelliges, tadelakt, décoration locale — parfait pour un séjour
+                  tranquille et culturel.
+                </p>
+                <p>
+                  📍 Emplacement : 46, rue Sidi Fateh, Rabat 10000 / 10030 —
+                  dans les ruelles de la Kasbah.
+                
+                </p>
+              </div>
+            </div>
+            <!-- SLIDE 2:hotel2 -->
+            <div class="slide">
+              <img src="../files/image_rabat/hotel2.jpg" />
+              <div class="detail-text">
+                <h2><a class="li"
+                href="https://www.google.com/search?q=Sofitel+Rabat+Jardin+des+Roses&client=opera&hs=djC&sca_esv=edc1065"
+                target="_blank">Sofitel Rabat Jardin des Roses
+                </a></h2>
+                <p>
+                  Un hôtel 5 étoiles, situé dans un cadre verdoyant et calme,
+                  qui combine luxe & sérénité. Parfait pour ceux qui cherchent
+                  confort et détente, un peu à l’écart de l’agitation du centre.
+                  
+                </p>
+                <p>
+                  📍 Emplacement : quartier paisible, proche des zones
+                  résidentielles.<br />
+                 
+                </p>
+              </div>
+            </div>
+            <!-- SLIDE 3:hotel3 -->
+            <div class="slide">
+              <img src="../files/image_rabat/hotel1.jpg" />
+              <div class="detail-text">
+                <h2><a class="li"
+                href="https://www.google.com/search?client=opera&q=Rabat+Marriott+Hotel&sourceid=opera&ie=UTF-8&oe=UTF-8"
+                target="_blank">
+                Rabat Marriott Hotel
+                </a></h2>
+                <p>
+                  Situé en plein centre de Rabat — à 800 m de la Bibliothèque
+                  nationale — le Rabat Marriott Hotel offre un séjour
+                  confortable et moderne. Avec piscine extérieure, salle de
+                  fitness, chambres climatisées et petit-déjeuner buffet, c’est
+                  une excellente base pour explorer la ville.
+                 
+                </p>
+                <p>
+                  📍Emplacement : centre-ville, pratique pour visiter les
+                  monuments.<br />
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Flèche droite -->
+          <button class="arrow right">&#10095;</button>
+        </div>
+      </section>
+      
+      
+      <!--vorte des restaurant-->
+      <h3 class="detail-title">Restaurants</h3>
+      <section class="detail-section" id="rest">
+        <div class="detail-container">
+          <!-- Flèche gauche -->
+          <button class="arrow left">&#10094;</button>
+          <!-- Piste des slides -->
+          <div class="slide-track">
+            <!-- SLIDE 1:rest1 -->
+            <div class="slide active">
+              <img src="../files/image_rabat/rest1.webp" />
+              <div class="detail-text">
+               <h2><a class="li"
+                href="https://www.google.com/search?q=Le+Deck+–+Fairmont+La+Marina&sca_esv=edc10655191454d0&hl=en&sxsrf=AE3TifP8KBxJbaKnv3I1K4_K1PlhExmN5A%3A1764530672367&source=hp&ei=8JksadW2C_C_0PEPmIGO4AU&iflsig=AOw8s4IAAAAAaSyoAOCrjhuQ6ub5PzUxXhf96_oFBX79&ved=0ahUKEwjV7qT_zJqRAxXwHzQIHZiAA1wQ4dUDCBg&uact=5&oq=Le+Deck+–+Fairmont+La+Marina&gs_lp=Egdnd3Mtd2l6Ih5MZSBEZWNrIOKAkyBGYWlybW9udCBMYSBNYXJpbmEyBBAjGCcyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogQyBRAAGO8FMggQABiABBiiBEivCFAAWABwAHgAkAEAmAF_oAF_qgEDMC4xuAEDyAEA-AEC-AEBmAIBoAKfAZgDAJIHAzAuMaAH-wayBwMwLjG4B58BwgcDNC0xyAcX&sclient=gws-wiz"
+                target="_blank">
+               Le Deck – Fairmont La Marina
+                </a></h2>
+                <p>
+                  Un restaurant rooftop élégant situé à la Marina, avec vue sur
+                  l’eau et souvent un cadre chic et détendu — parfait pour un
+                  dîner romantique ou un apéritif au coucher du soleil. Cuisine
+                  méditerranéenne / fruits de mer / mezzés raffinés.
+                  
+                </p>
+                <p>
+                  📍 Emplacement : La Marina, Avenue de Fès, à Rabat-Salé —
+                  accès direct à la Marina / fleuve.  
+                </p>
+              </div>
+            </div>
+            <!-- SLIDE 2:rest2 -->
+            <div class="slide">
+              <img src="../files/image_rabat/rest2.jpg" />
+              <div class="detail-text">
+              <h2><a class="li"
+                href="https://www.google.com/search?q=Le+Dhow&client=opera&hs=srr&sca_esv=edc10655191454d0&sxsrf=AE3TifOzXZyaKs_Uxr96Z2nQsn7N7AcQpg%3A1764530399968&ei=35gsaf_JOp-pkdUPisP58AU&ved=0ahUKEwi_tb39y5qRAxWfVKQEHYphHl4Q4dUDCBE&uact=5&oq=Le+Dhow&gs_lp=Egxnd3Mtd2l6LXNlcnAiB0xlIERob3cyChAjGIAEGCcYigUyCxAuGIAEGMcBGK8BMgsQABiABBiRAhiKBTIFEAAYgAQyBRAAGIAEMgsQABiABBiRAhiKBTIFEAAYgAQyCxAAGIAEGJECGIoFMgUQABiABDIaEC4YgAQYxwEYrwEYlwUY3AQY3gQY4ATYAQFIvxhQshFYshFwAXgBkAEAmAGGAaABhgGqAQMwLjG4AQPIAQD4AQH4AQKYAgOgAtUGqAIQwgINECMYgAQYJxiKBRjqAsICExAjGPAFGIAEGCcYyQIYigUY6gLCAgoQIxjwBRgnGOoCwgIdEC4YgAQYkQIYtAIY5wYYxwEYigUY6gIYrwHYAQHCAhcQABiABBiRAhi0AhjnBhiKBRjqAtgBAZgDE_EFhrgWurII6zO6BgYIARABGAGSBwcxLjEuNS0xoAe2CLIHAzAuMbgHngHCBwUzLTIuMcgHLw&sclient=gws-wiz-serp"
+                target="_blank">Le Dhow
+                </a></h2>
+                
+                <p>
+                  Une expérience unique : dîner dans un bateau-restaurant amarré
+                  sur le fleuve Bouregreg, avec vue directe sur les rives de
+                  Rabat et de Salé. Atmosphère romantique et originale, idéale
+                  pour une soirée spéciale — cuisine de la mer et ambiance
+                  nautique. :contentReference[oaicite:19]{index=19}
+                </p>
+                <p>
+                  📍 Emplacement : Quai de Bouregreg, Rabat — embarquement sur
+                  le fleuve. :contentReference[oaicite:20]{index=20}<br />
+                  
+                </p>
+              </div>
+            </div>
+            
+          </div>
+          <!-- Flèche droite -->
+          <button class="arrow right">&#10095;</button>
+        </div>
+      </section>
+      <!--vorte des plage-->
+      <h3 class="detail-title">plages</h3>
+      <section class="detail-section">
+        <div class="detail-container">
+          <!-- Flèche gauche -->
+          <button class="arrow left">&#10094;</button>
+          <!-- Piste des slides -->
+          <div class="slide-track">
+            <!-- SLIDE 1:plag1 -->
+            <div class="slide active">
+              <img src="../files/image_rabat/harhoura.jpg" />
+              <div class="detail-text">
+                <h2>
+                  <a class="li"
+                    href="https://maps.google.com/?q=Plage+Harhoura"
+                    target="_blank">
+                    Plage Harhoura
+                  </a>
+                </h2>
+
+                <p>
+                  L’une des plages les plus appréciées près de Rabat, connue
+                  pour son eau claire, ses rochers emblématiques et son sable
+                  propre. Parfaite pour nager lorsque la mer est calme, se
+                  promener ou profiter d’une journée en famille. Très belle au
+                  coucher du soleil.
+                </p>
+
+                <p>
+                  📍Emplacement :Harhoura – à 10/15 minutes de Rabat, accessible
+                  en taxi ou en voiture.<br />
+
+                  💰Prix :accès gratuit ; parking entre 5 et 10 MAD selon
+                  saison.<br />
+
+                  ℹ️ Infos pratiques :zones surveillées en été, restaurants &
+                  cafés à proximité, eau généralement propre, idéale pour
+                  familles, nageurs et amoureux des paysages naturels.
+                </p>
+              </div>
+            </div>
+            <!-- SLIDE 2:plag2 -->
+            <div class="slide">
+              <img src="../files/image_rabat/skhirat.jpg" />
+              <div class="detail-text">
+                <h2>
+                  <a class="li"
+                    href="https://maps.google.com/?q=Plage+de+Skhirat"
+                    target="_blank">
+                    Plage de Skhirat
+                  </a>
+                </h2>
+
+                <p>
+                  Une plage paisible et très bien entretenue, idéale pour la
+                  baignade grâce à son eau généralement calme. Skhirat est aussi
+                  connue pour son atmosphère élégante, ses hôtels et ses
+                  restaurants situés directement au bord de la mer. Excellent
+                  choix pour une journée détente.
+                </p>
+
+                <p>
+                  📍 Emplacement :Skhirat – à 20 minutes de Rabat, via
+                  l’autoroute ou la route côtière.<br />
+
+                  💰 Prix : accès gratuit ; parking entre 5 et 10 MAD.<br />
+
+                  ℹ️ Infos pratiques : zones de baignade confortables, plusieurs
+                  cafés & restaurants, sable très propre, idéale pour familles,
+                  couples et nageurs.
+                </p>
+              </div>
+            </div>
+            <!-- SLIDE 3:plag3 -->
+            <div class="slide">
+              <img src="../files/image_rabat/bouzplage.jpg" />
+              <div class="detail-text">
+                <h2>
+                  <a class="li"
+                    href="https://maps.google.com/?q=Plage+Bouznika"
+                    target="_blank">
+                     Plage de Bouznika
+                  </a>
+                </h2>
+
+                <p>
+                  Une plage réputée pour son eau claire, son sable fin et son
+                  ambiance familiale. Très appréciée pour la baignade grâce à sa
+                  mer plus calme que les plages de Rabat. Idéale pour passer la
+                  journée, faire du beach-sport ou profiter d’un coucher de
+                  soleil magnifique.
+                </p>
+
+                <p>
+                  📍 Emplacement :Bouznika – entre Rabat et Mohammedia,
+                  facilement accessible par l’autoroute et la route côtière.<br />
+
+                  💰 Prix :accès gratuit ; parkings entre 5–10 MAD selon
+                  saison.<br />
+
+                  ℹ️ Infos pratiques :eau généralement propre, zones surveillées
+                  en été, cafés & restaurants juste à côté, idéale pour familles
+                  et nageurs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Flèche droite -->
+          <button class="arrow right">&#10095;</button>
+        </div>
+      </section>
+    </main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <!-- Bloc À propos -->
+        <div class="footlinks">
+            <h4 id="footer-about-title">Découvre le Maroc</h4>
+
+            <p id="footer-about-text">
+                Explorez la magie du Maroc avec nous. Des montagnes de l'Atlas aux dunes du Sahara,
+                nous vous guidons vers les meilleurs endroits.
+            </p>
+
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+
+        <!-- Bloc Liens rapides -->
+        <div class="footlinks">
+            <h4 id="footer-links-title">Liens Rapides</h4>
+
+            <ul>
+                <li><a id="footer-faq" href="../FAQ/FAQ.html">Questions fréquentes ?</a></li>
+                <li><a id="footer-home" href="../index-final.html">Accueil</a></li>
+                <li><a id="footer-villes" href="../index-final.html#ville">Villes</a></li>
+                <li><a id="footer-about" href="../pages_agence/about-1.html">À propos</a></li>
+                <li><a id="footer-contact" href="../pages_agence/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Contact -->
+        <div class="footlinks">
+            <h4 id="footer-contact-title">Contact</h4>
+
+            <ul>
+                <li><a id="footer-address" href="#"><i class='bx bxs-map'></i> Casablanca, Maroc</a></li>
+                <li><a id="footer-phone" href="#"><i class='bx bxs-phone'></i> +212 600 000 000</a></li>
+                <li><a id="footer-email" href="#"><i class='bx bxs-envelope'></i> info@maroctrip.ma</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Newsletter -->
+        <div class="footlinks">
+            <h4 id="footer-newsletter-title">Newsletter</h4>
+
+            <p id="footer-newsletter-text">
+                Abonnez-vous pour recevoir nos meilleures offres.
+            </p>
+
+            <form>
+                <input type="email" class="newsletter-input" placeholder="Votre Email"
+                       id="newsletter-input" aria-label="Email pour la newsletter">
+
+                <button type="button" class="newsletter-btn" id="newsletter-btn">
+                    S'abonner
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p id="footer-copy">&copy; 2025 Découvre le Maroc. Tous droits réservés.</p>
+    </div>
+</footer>
+
+
+
+    <script src="../javaScript/rabat.js"></script>
+
+  </body>
+</html>

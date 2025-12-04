@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FAQs</title>
+        <link rel="icon" href="../files/logo.png">
+        <link rel="stylesheet" type="text/css" href="../css/style-final.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+            rel="stylesheet">
+            <link rel="stylesheet" href="style-FAQ.css" />
+            <link rel="stylesheet" href="../css/style-final.css">
+    </head>
+    <body>
+
+        <header>
+    <nav>
+        <img src="../files/logo.png" class="logo" alt="Logo" title="Découvre le Maroc">
+
+        <div class="links">
+            <ul class="navbar">
+                <li><a id="nav-home" href="../index-final.html" class="active">Accueil</a></li>
+                <li><a id="nav-ville" href="../index-final.html#ville">Villes</a></li>
+                <li><a id="nav-contact" href="../pages_agence/contact.html">Contact</a></li>
+
+                <!-- Recherche -->
+                <li>
+                    <div class="search-container">
+                        <i class='bx bx-search' id="searchIcon"></i>
+                        <input type="text" id="searchInput" placeholder="Rechercher...">
+                    </div>
+                </li>
+
+               <!-- Météo -->
+<li class="weather-wrapper">
+    <button id="showWeatherBtn" class="weather-toggle">Météo</button>
+
+    <div class="weather-card" id="weatherCard" style="display: none;">
+        <h2 id="weather-title">Météo</h2>
+        <input type="text" id="city" placeholder="Entrez une ville">
+        <button id="btn">Chercher</button>
+        <div id="result"></div>
+    </div>
+</li>
+
+
+                <li>
+                    <select id="langSelect">
+                        <option value="fr">FR</option>
+                        <option value="en">EN</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="faq-section">
+    <h1 class="faq-title">FAQs</h1>
+
+    <div class="faq">
+        <div class="question" role="button" tabindex="0">
+            <h3>Ai-je besoin d'un visa pour visiter le Maroc ?</h3>
+            <svg class="faq-arrow" width="15" height="10" viewBox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" fill="none" />
+            </svg>
+        </div>
+        <div class="answer">
+            <p>
+                Les visiteurs des <b>États-Unis</b>, du <b>Canada</b>, du <b>Royaume-Uni</b>, de l'<b>Irlande</b>,
+                de l'<b>Australie</b> et de la plupart des pays de l'<b>Union Européenne</b> n'ont pas besoin de visa
+                pour les séjours touristiques d'une durée maximale de <b>90 jours</b>. Vous aurez besoin d'<b>un
+                passeport valide</b> avec au moins 6 mois de validité à compter de votre date d'entrée. Vérifiez
+                toujours auprès du consulat marocain de votre pays avant de voyager.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" role="button" tabindex="0">
+            <h3>Quelle est la meilleure période pour visiter le Maroc ?</h3>
+            <svg class="faq-arrow" width="15" height="10" viewBox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" fill="none" />
+            </svg>
+        </div>
+        <div class="answer">
+            <p>Le Maroc est une destination ouverte toute l'année, mais les saisons varient :</p>
+            <ul>
+                <li><b>Janvier - Février</b> : Températures fraîches, neige dans les montagnes de l'Atlas.</li>
+                <li><b>Mars - Mai</b> : Printemps, période idéale pour la randonnée et le tourisme.</li>
+                <li><b>Juin - Août</b> : Chaud, surtout dans le sud et les régions désertiques. Les villes côtières sont plus fraîches.</li>
+                <li><b>Septembre - Octobre</b> : Temps chaud et agréable.</li>
+                <li><b>Novembre - Décembre</b> : Températures douces, idéales pour les randonnées à dos de chameau et les visites de villes.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" role="button" tabindex="0">
+            <h3>L'assurance de voyage est-il nécessaire ?</h3>
+            <svg class="faq-arrow" width="15" height="10" viewBox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" fill="none" />
+            </svg>
+        </div>
+        <div class="answer">
+            <p>
+                Absolument. Tous les voyageurs doivent souscrire une assurance voyage avant d'arriver au Maroc.
+                Celle-ci doit couvrir les urgences médicales, les annulations et le vol. Votre guide vous demandera
+                les détails de votre assurance le premier jour de votre circuit.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" role="button" tabindex="0">
+            <h3>Comment se rendre au Maroc ?</h3>
+            <svg class="faq-arrow" width="15" height="10" viewBox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" fill="none" />
+            </svg>
+        </div>
+        <div class="answer">
+            <ul>
+                <li>Depuis les États-Unis : Royal Air Maroc propose des vols directs de New York (JFK) à Casablanca.</li>
+                <li>Depuis l'Europe : De nombreuses compagnies aériennes à bas prix volent directement vers Marrakech, Fès, Casablanca, Agadir et Ouarzazate.</li>
+                <li>À l'intérieur du Maroc : Des vols intérieurs sont disponibles et à des prix raisonnables via Royal Air Maroc.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" role="button" tabindex="0">
+            <h3>Quelle est la monnaie utilisée au Maroc et comment puis-je changer de l'argent ?</h3>
+            <svg class="faq-arrow" width="15" height="10" viewBox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" fill="none" />
+            </svg>
+        </div>
+        <div class="answer">
+            <p>
+                La monnaie officielle est le <b>Dirham marocain (MAD ou DH)</b>. Vous pouvez changer de l'argent dans
+                les aéroports, les banques et les bureaux de change officiels. Les principales devises comme l'<b>USD</b>
+                et l'<b>EUR</b> sont largement acceptées pour l'échange.
+            </p>
+        </div>
+    </div>
+</section>
+
+        <footer class="site-footer">
+        <div class="footer-content">
+       <!-- Bloc À propos -->
+        <div class="footlinks">
+            <h4 id="footer-about-title">Découvre le Maroc</h4>
+
+            <p id="footer-about-text">
+                Explorez la magie du Maroc avec nous. Des montagnes de l'Atlas aux dunes du Sahara,
+                nous vous guidons vers les meilleurs endroits.
+            </p>
+
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+
+        <!-- Bloc Liens rapides -->
+        <div class="footlinks">
+            <h4 id="footer-links-title">Liens Rapides</h4>
+
+            <ul>
+                <li><a id="footer-faq" href="./FAQ.html">Questions fréquentes ?</a></li>
+                <li><a id="footer-home" href="../index-final.html">Accueil</a></li>
+                <li><a id="footer-villes" href="../index-final.html#ville">Villes</a></li>
+                <li><a id="footer-about" href="../pages_agence/about-1.html">À propos</a></li>
+                <li><a id="footer-contact" href="../pages_agence/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Contact -->
+        <div class="footlinks">
+            <h4 id="footer-contact-title">Contact</h4>
+
+            <ul>
+                <li><a id="footer-address" href="#"><i class='bx bxs-map'></i> Casablanca, Maroc</a></li>
+                <li><a id="footer-phone" href="#"><i class='bx bxs-phone'></i> +212 600 000 000</a></li>
+                <li><a id="footer-email" href="#"><i class='bx bxs-envelope'></i> info@maroctrip.ma</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Newsletter -->
+        <div class="footlinks">
+            <h4 id="footer-newsletter-title">Newsletter</h4>
+
+            <p id="footer-newsletter-text">
+                Abonnez-vous pour recevoir nos meilleures offres.
+            </p>
+
+            <form>
+                <input type="email" class="newsletter-input" placeholder="Votre Email"
+                       id="newsletter-input" aria-label="Email pour la newsletter">
+
+                <button type="button" class="newsletter-btn" id="newsletter-btn">
+                    S'abonner
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p id="footer-copy">&copy; 2025 Découvre le Maroc. Tous droits réservés.</p>
+    </div>
+</footer>
+
+        <script src="script-FAQ.js"></script>
+        <script src="../javaScript/script-final.js"></script>
+    </body>
+</html>
+
+    

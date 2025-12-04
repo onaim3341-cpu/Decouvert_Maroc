@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouarzazate Tinghir Merzouga</title>
+    <link rel="icon" href="../files/logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/ourzazatte.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body class="location-body">
+    <script src="../javaScript/script-final.js"></script>
+
+    <header>
+        <nav>
+            <img src="../files/logo.png" class="logo" alt="Logo" title="Découvre le Maroc">
+
+            <div class="links">
+                <ul class="navbar">
+                    <li><a id="nav-home" href="../index-final.html" class="active">Accueil</a></li>
+                    <li><a id="nav-ville" href="../index-final.html#ville">Villes</a></li>
+                    <li><a id="nav-contact" href="../pages_agence/contact.html">Contact</a></li>
+
+                    <!-- Recherche -->
+                    <li>
+                        <div class="search-container">
+                            <i class='bx bx-search' id="searchIcon"></i>
+                            <input type="text" id="searchInput" placeholder="Rechercher...">
+                        </div>
+                    </li>
+
+                    <!-- Météo -->
+                    <li class="weather-wrapper">
+                        <button id="showWeatherBtn" class="weather-toggle">Météo</button>
+
+                        <div class="weather-card" id="weatherCard" style="display: none;">
+                            <h2 id="weather-title">Météo</h2>
+                            <input type="text" id="city" placeholder="Entrez une ville">
+                            <button id="btn">Chercher</button>
+                            <div id="result"></div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <select id="langSelect">
+                            <option value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="introduction">
+        <h1>Bienvenue à Ouarzazate – Tinghir – Merzouga</h1>
+        <p>Découvrez le sud marocain entre kasbahs, oasis et dunes dorées.</p>
+
+    </div>
+    <section class="descr-ville">
+        <div class="descr">
+            <p>
+                <span id="ouarz-span">Ouarzazate, Tinghir et Merzouga</span> <span id="ouarz-text">représentent trois
+                    destinations emblématiques du sud
+                    marocain,
+                    chacune offrant une expérience unique pour les visiteurs. Ces villes sont connues pour la richesse
+                    de
+                    leurs
+                    paysages, leur culture berbère authentique et leurs traditions encore très vivantes. Ouarzazate
+                    séduit
+                    par
+                    ses kasbahs en terre et son ambiance de porte du désert. Tinghir attire par ses oasis, ses montagnes
+                    et
+                    la
+                    chaleur de ses habitants, avec à proximité Kelaat M’Gouna, célèbre pour la culture des roses. Plus
+                    au
+                    sud,
+                    Merzouga impressionne par ses grandes dunes et l’accueil traditionnel du désert, où les voyageurs
+                    peuvent
+                    découvrir la vie saharienne. Ensemble, ces trois lieux offrent un aperçu magnifique de
+                    l’hospitalité,
+                    des
+                    coutumes et de la diversité naturelle du sud du Maroc.</span>
+            </p>
+        </div>
+        <div class="comments-grid">
+            <div class="comment-card">
+                <div class="photo_pr">
+                    <img src="../files/image_ouarzazate/visiteur.png" alt="Photo visiteur">
+                    <p class="author-name">M. John</p>
+                </div>
+
+                <div class="content">
+                    <p class="quote">“</p>
+                    <p class="comment" id="ouarz-comment">
+                        J'ai eu l'occasion de visiter le sud-est du Maroc et j'ai été fasciné par ses paysages à couper
+                        le
+                        souffle. Entre les dunes majestueuses, les oasis verdoyantes et la richesse culturelle des
+                        villages,
+                        c'était une expérience inoubliable. Un endroit à découvrir absolument !
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="cities">
+        <h2 class="cities-title" id="destinations-title">Découvrez Ouarzazate, Tinghir et Merzouga</h2>
+
+        <div class="cities-container">
+
+            <div class="city-card">
+                <img src="../files/image_ouarzazate/endroit.jpg">
+                <h3 id="Endroits">Endroits</h3>
+                <p id="card-places-text">Nous vous proposons une sélection de lieux incontournables pour admirer la
+                    région sous ses plus beaux angles.</p>
+                <button class="dest-discover-btn" onclick="location.href='#Endroits-title'">Découvrir</button>
+
+            </div>
+
+            <div class="city-card">
+                <img src="../files/image_ouarzazate/Activite.jpg">
+                <h3 id="card-activities-title">Activités</h3>
+                <p id="card-activities-text">Nous vous proposons une sélection d’activités pour découvrir la région
+                    autrement.</p>
+                <button class="dest-discover-btn" onclick="location.href='#Activités'">Découvrir</button>
+
+            </div>
+
+
+            <div class="city-card">
+                <img src="../files/image_ouarzazate/Hebergement.jpg">
+                <h3 id="card-stay-title">Hébergement</h3>
+                <p id="card-stay-text">Nous vous proposons des hébergements soigneusement choisis pour un séjour
+                    confortable et authentique.</p>
+                <button class="dest-discover-btn" onclick="location.href='#Hébergement'">Découvrir</button>
+
+            </div>
+            <div class="city-card">
+                <img src="../files/image_ouarzazate/INSIDE_Eden.jpg">
+                <h3 id="card-resto-title">Restaurants</h3>
+                <p id="card-resto-text">Nous vous proposons une sélection de restaurants pour savourer les spécialités
+                    locales en toute tranquillité.</p>
+                <button onclick="location.href='#Restaurants'">Découvrir</button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <h3 class="detail-title" id="Endroits-title">Endroits</h3>
+    <section id="Endroits" class="detail-section">
+        <div class="detail-container">
+            <!-- Flèche gauche -->
+            <button class="arrow left">&#10094;</button>
+
+            <!-- slides -->
+            <div class="slide-track">
+
+                <div class="slide active">
+                    <img src="../files/image_ouarzazate/Kasbah.jpg">
+                    <div class="detail-text">
+                        <h3 id="place1-title">Kasbah Aït Ben Haddou</h3>
+                        <p id="place1-text">
+                            Visite de la célèbre kasbah en terre, classée au patrimoine mondial de l’UNESCO,
+                            avec ses ruelles anciennes et ses vues panoramiques sur la vallée.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Ouarzazate-3.jpg">
+                    <div class="detail-text">
+                        <h3 id="place2-title">Ouarzazate Studios de Cinéma</h3>
+                        <p id="place2-text">
+                            Découverte des studios où ont été tournés de nombreux films et séries internationales,
+                            avec décors de désert, temples et villes antiques.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Tapis1.jpg">
+                    <div class="detail-text">
+                        <h3 id="place3-title">Tapis berbères - Taznakht</h3>
+                        <p id="place3-text">
+                            Arrêt à Taznakht pour rencontrer les artisanes et découvrir le tissage traditionnel des
+                            tapis
+                            berbères aux motifs amazighs colorés.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Ouasis_de_Fint.jpg">
+                    <div class="detail-text">
+                        <h3 id="place4-title">Oasis de Fint</h3>
+                        <p id="place4-text">
+                            Une oasis paisible entourée de montagnes, idéale pour se détendre, rencontrer les habitants
+                            et profiter d’un paysage verdoyant.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Talouet_kasbah.jpg">
+                    <div class="detail-text">
+                        <h3 id="place5-title">Kasbah de Telouet</h3>
+                        <p id="place5-text">
+                            Visite de la kasbah de Telouet, ancienne demeure du Glaoui, avec ses salons décorés de
+                            zelliges,
+                            bois sculpté et plafonds peints dans l’Atlas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/toud1.jpg" alt="Gorges Todra">
+                    <div class="detail-text">
+                        <h3 id="place6-title">Tinghir - Gorges du Todra</h3>
+                        <p id="place6-text">
+                            Balade au cœur des gorges du Todra, entre falaises hautes et rivière fraîche idéale pour
+                            marcher.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Ouasis_tinghir.jpg" alt="Oasis Tinghir">
+                    <div class="detail-text">
+                        <h3 id="place7-title">Oasis de Tinghir</h3>
+                        <p id="place7-text">
+                            Promenade dans l’oasis verdoyante de Tinghir avec ses palmiers, jardins et villages
+                            traditionnels.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/ROSE_f.jpg" alt="Vallée des Roses">
+                    <div class="detail-text">
+                        <h3 id="place8-title">Vallée des Roses</h3>
+                        <p id="place8-text">
+                            Découverte de la vallée des Roses avec ses champs parfumés et paysages colorés.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Rose.jpg" alt="Coopératives d’eau de rose">
+                    <div class="detail-text">
+                        <h3 id="place9-title">Coopératives d’eau de rose</h3>
+                        <p id="place9-text">
+                            Visite des coopératives locales pour voir la fabrication de l’eau de rose et des produits
+                            naturels.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Rondonnee.jpg" alt="Vallée M’Goun">
+                    <div class="detail-text">
+                        <h3 id="place10-title">Randonnée dans la vallée M’Goun</h3>
+                        <p id="place10-text">
+                            Marche entre montagnes, villages berbères et paysages verdoyants de la vallée.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/tisdrine.jpeg" alt="Montée vers Tisadrine">
+                    <div class="detail-text">
+                        <h3 id="heb1-title">Montée vers Tisadrine</h3>
+                        <p id="heb1-text">
+                            Cette montée part de Boumalne Dadès et mène vers les Gorges du Dadès, offrant le célèbre
+                            point de vue de Tisadrine, connu pour ses virages en épingle et son panorama unique sur les
+                            gorges.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/OUarza.jpg" alt="Artisanat local">
+                    <div class="detail-text">
+                        <h3 id="place11-title">Artisanat local</h3>
+                        <p id="place11-text">
+                            Découvrir les produits artisanaux : parfums, savons, huiles et objets traditionnels
+                            berbères.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Flèche droite -->
+            <button class="arrow right">&#10095;</button>
+        </div>
+    </section>
+
+
+    <h3 class="detail-title" id="Activités">Activités</h3>
+    <section id="Activités" class="detail-section">
+        <div class="detail-container">
+            <button class="arrow left">&#10094;</button>
+
+            <div class="slide-track">
+
+                <div class="slide active">
+                    <img src="../files/image_ouarzazate/Camel2.jpg">
+                    <div class="detail-text">
+                        <h3 id="act1-title">Merzouga - Balade à dos de dromadaire</h3>
+                        <p id="act1-text">
+                            Balade à dos de dromadaire au milieu des dunes dorées de l’Erg Chebbi, idéale pour admirer
+                            un
+                            coucher de soleil inoubliable.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/NUIT.jpg">
+                    <div class="detail-text">
+                        <h3 id="act2-title">Nuit en bivouac nomade</h3>
+                        <p id="act2-text">
+                            Nuit en camp nomade sous un ciel étoilé, avec musique traditionnelle et dîner autour du feu.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/4x4.jpg">
+                    <div class="detail-text">
+                        <h3 id="act3-title">Excursion en 4x4 dans le désert</h3>
+                        <p id="act3-text">
+                            Excursion en 4x4 à travers dunes et plateaux désertiques, avec arrêts dans des villages
+                            sahariens.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/sunset.jpg">
+                    <div class="detail-text">
+                        <h3 id="act4-title">Lever du soleil sur les dunes</h3>
+                        <p id="act4-text">
+                            Montée sur une dune à l’aube pour admirer un lever de soleil spectaculaire sur l’Erg Chebbi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Sandboard.jpg">
+                    <div class="detail-text">
+                        <h3 id="act5-title">Sandboard sur les dunes</h3>
+                        <p id="act5-text">
+                            Descente des dunes en sandboard pour une expérience sportive et amusante dans le sable fin.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/gnaoua.jpg">
+                    <div class="detail-text">
+                        <h3 id="act6-title">Musique Gnawa à Khamlia</h3>
+                        <p id="act6-text">
+                            Voir un spectacle Gnawa à Khamlia, connu pour ses rythmes traditionnels et ses chants
+                            spirituels.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Tour.jpg">
+                    <div class="detail-text">
+                        <h3 id="act7-title">Tour en quad</h3>
+                        <p id="act7-text">
+                            Balade en quad sur les dunes pour une expérience rapide et dynamique au cœur du désert.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/bain-sable.jpg">
+                    <div class="detail-text">
+                        <h3 id="act8-title">Bain de sable</h3>
+                        <p id="act8-text">
+                            Pratiqué dans les dunes de l’Erg Chebbi, le bain de sable consiste à s’immerger quelques
+                            minutes dans le sable chaud pour profiter de ses bienfaits relaxants et thérapeutiques.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/cheval.jpg">
+                    <div class="detail-text">
+                        <h3 id="act9-title">Balade à cheval</h3>
+                        <p id="act9-text">
+                            Promenade à cheval au pied des dunes pour profiter d’un paysage saharien calme et
+                            authentique.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/OUarza.jpg">
+                    <div class="detail-text">
+                        <h3 id="act10-title">Montée vers Tisadrine</h3>
+                        <p id="act10-text">
+                            Cette montée part de Boumalne Dadès et mène vers les Gorges du Dadès, offrant le célèbre
+                            point de vue de Tisadrine, connu pour ses virages en épingle et son panorama unique sur les
+                            gorges.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/ahidous2.jpg">
+                    <div class="detail-text">
+                        <h3 id="act11-title">Ahidous – Activité culturelle</h3>
+                        <p id="act11-text">
+                            Voir un spectacle d’Ahidous, une danse amazighe traditionnelle rythmée par les tambours et
+                            les chants en cercle, dans une ambiance festive et authentique.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/montagne.png" alt="Passerelle en corde à Tinghir">
+                    <div class="detail-text">
+                        <h3 id="act14-title">Passerelle en corde à Tinghir</h3>
+                        <p id="act14-text">
+                            Traversée d’une passerelle en corde accrochée à flanc de montagne, pour une expérience
+                            vertigineuse avec une vue unique sur les gorges de Tinghir.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="arrow right">&#10095;</button>
+        </div>
+    </section>
+
+
+    <h3 class="detail-title" id="Hébergement">Hébergement</h3>
+    <section id="Hébergement" class="detail-section">
+        <div class="detail-container">
+            <button class="arrow left">&#10094;</button>
+
+            <div class="slide-track">
+
+
+                <div class="slide  active">
+                    <img src="../files/image_ouarzazate/Eden boutique_hotel.jpg">
+                    <div class="detail-text">
+                        <h3 id="rest4-title">Eden Boutique Hotel – Dadès</h3>
+                        <p id="rest4-text">
+                            Hôtel moderne et chaleureux à Boumalne-Dadès, idéal pour se reposer après la découverte des
+                            gorges et de la vallée du Dadès.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Villa Australéis-ouarz.jpg">
+                    <div class="detail-text">
+                        <h3 id="rest3-title">Villa Australéis – Skoura</h3>
+                        <p id="rest3-text">
+                            Villa de charme au cœur de la palmeraie, avec jardin, piscine et espaces de détente.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/darahlam.jpg">
+                    <div class="detail-text">
+                        <h3 id="heb3-title">Dar Ahlam — Skoura</h3>
+                        <p id="heb3-text">
+                            Séjour dans une kasbah de charme au cœur de la palmeraie de Skoura, avec jardins paisibles,
+                            service haut de gamme et ambiance traditionnelle raffinée.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Eden-Boutique-Hotel-restaurant.webp">
+                    <div class="detail-text">
+                        <h3 id="act13-title">Restaurant Eden Boutique</h3>
+                        <p id="act13-text">
+                            Un excellent choix pour déguster de bons plats dans un cadre moderne et chaleureux.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/General_Hotel_Xaluca.jpg" alt="Hôtel Xaluca Dades">
+                    <div class="detail-text">
+                        <h3 id="act15-title">Hôtel Xaluca Dades</h3>
+                        <p id="act15_text">
+                            Hôtel de style kasbah avec piscine et vue sur les montagnes, parfait pour se détendre après
+                            les gorges du Dadès.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="arrow right">&#10095;</button>
+        </div>
+    </section>
+
+    <h3 class="detail-title" id="Restaurants">Restaurants</h3>
+    <section id="Restaurants" class="detail-section">
+        <div class="detail-container">
+            <button class="arrow left">&#10094;</button>
+
+            <div class="slide-track">
+
+                <div class="slide active">
+                    <img src="../files/image_ouarzazate/Riad_sahara_stars_bomaln.jpg">
+                    <div class="detail-text">
+                        <h3 id="rest1-title">Riad Sahara Stars</h3>
+                        <p id="rest1-text">
+                            Riad-hôtel à Boumalne-Dadès, avec piscine, terrasse et restaurant, idéal pour découvrir la
+                            vallée du Dadès.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Auberge cafe merz.jpg">
+                    <div class="detail-text">
+                        <h3 id="rest2-title">Auberge-restaurant à Merzouga</h3>
+                        <p id="rest2-text">
+                            Petite auberge-restaurant chaleureuse à Merzouga, qui offre des plats marocains sur une
+                            terrasse avec vue sur les dunes de l’Erg Chebbi.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Dar_Ahlam_fo.jpeg">
+                    <div class="detail-text">
+                        <h3 id="act12-title">Restaurant de Dar Ahlam</h3>
+                        <p id="act12-text">
+                            Le restaurant de Dar Ahlam propose une cuisine marocaine raffinée, servie dans un cadre
+                            calme
+                            et élégant, avec un service attentionné.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../files/image_ouarzazate/Eden-Boutique-Hotel-restaurant.webp">
+                    <div class="detail-text">
+                        <h3 id="heb2-title">Eden_Boutique</h3>
+                        <p id="heb2-text">Le restaurant de l’Eden Boutique Hotel offre une cuisine marocaine raffinée
+                            dans un cadre calme et élégant, idéal pour se détendre après les gorges du Dadès.</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <button class="arrow right">&#10095;</button>
+        </div>
+    </section>
+
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <!-- Bloc À propos -->
+        <div class="footlinks">
+            <h4 id="footer-about-title">Découvre le Maroc</h4>
+
+            <p id="footer-about-text">
+                Explorez la magie du Maroc avec nous. Des montagnes de l'Atlas aux dunes du Sahara,
+                nous vous guidons vers les meilleurs endroits.
+            </p>
+
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+
+        <!-- Bloc Liens rapides -->
+        <div class="footlinks">
+            <h4 id="footer-links-title">Liens Rapides</h4>
+
+            <ul>
+                <li><a id="footer-faq" href="../FAQ/FAQ.html">Questions fréquentes ?</a></li>
+                <li><a id="footer-home" href="../index-final.html">Accueil</a></li>
+                <li><a id="footer-villes" href="../index-final.html#ville">Villes</a></li>
+                <li><a id="footer-about" href="../pages_agence/about-1.html">À propos</a></li>
+                <li><a id="footer-contact" href="../pages_agence/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Contact -->
+        <div class="footlinks">
+            <h4 id="footer-contact-title">Contact</h4>
+
+            <ul>
+                <li><a id="footer-address" href="#"><i class='bx bxs-map'></i> Casablanca, Maroc</a></li>
+                <li><a id="footer-phone" href="#"><i class='bx bxs-phone'></i> +212 600 000 000</a></li>
+                <li><a id="footer-email" href="#"><i class='bx bxs-envelope'></i> info@maroctrip.ma</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Newsletter -->
+        <div class="footlinks">
+            <h4 id="footer-newsletter-title">Newsletter</h4>
+
+            <p id="footer-newsletter-text">
+                Abonnez-vous pour recevoir nos meilleures offres.
+            </p>
+
+            <form>
+                <input type="email" class="newsletter-input" placeholder="Votre Email"
+                       id="newsletter-input" aria-label="Email pour la newsletter">
+
+                <button type="button" class="newsletter-btn" id="newsletter-btn">
+                    S'abonner
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p id="footer-copy">&copy; 2025 Découvre le Maroc. Tous droits réservés.</p>
+    </div>
+</footer>
+
+
+<script src="./javaScript/script-final.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background:white;
+    color: #ffff;
+}
+
+section {
+    min-height: 100vh;
+    width: 80%;
+    margin: 15% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #8BAE66;
+    padding: 10%;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 3rem;
+    
+}
+
+.faq {
+    max-width: 700px;
+    margin-top: 2rem;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+
+.question:hover,
+.question:focus {
+    opacity: 0.8;
+}
+
+.question h3 {
+    font-size: 1.8rem;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding-right: 0.5rem;
+}
+
+.answer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+.answer ul {
+    padding: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.answer ul li {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.faq.active .answer{
+    max-height: 1000px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg{
+    transform: rotate(180deg);
+} 
+
+svg {
+    transition: transform 0.5s ease-in
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        width: 90%;
+    }
+
+    title {
+        font-size: 2.4rem;
+    }
+
+    .question h3 {
+        font-size: 1.4rem;
+    }
+
+    .answer p,
+    .answer ul li {
+        font-size: 1.2rem;
+    }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e3a857;
+    padding: 8px 24px;
+
+}
+
+nav .logo {
+    width: 80px;
+    margin: 0;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    font-size: 16.5px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+    transform: scale(1.2);
+}
+
+.search-container:hover,
+.weather-toggle:hover {
+    border-radius: 5px;
+    transform: scale(1.2);
+
+}
+
+/* recherche */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #e3a857;
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    gap: 0;
+    margin-right: 0;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#searchIcon {
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+#searchInput {
+    width: 0;
+    opacity: 0;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+    margin-left: 8px;
+}
+
+#searchInput.active {
+    width: 150px;
+    opacity: 1;
+}
+
+/*  météo */
+.weather-toggle {
+    background-color: #e3a857;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0;
+    font-size: 16.5px;
+}
+
+
+#langSelect {
+    border: 1px #f5f5f5 solid;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #e3a857;
+    font-size: 16px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#langSelect:hover {
+    transform: scale(1.2);
+}
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+/* --- 1. DESIGN SYSTEM : LA FUSION PARFAITE --- */
+:root {
+    /* VOTRE COULEUR DEMANDÉE POUR LE HEADER */
+    --header-bg: #f2a900;
+    /* Orange Soleil Vif */
+
+    /* L'ANCIENNE PALETTE "TERRE & NATURE" */
+    --primary-color: #D97736;
+    /* Terra Cotta (Boutons, Survol) */
+    --secondary-color: #2F5233;
+    /* Vert Forêt (Footer, Titres) */
+    --accent-color: #FFC107;
+    /* Jaune Doré (Détails) */
+
+    --dark-text: #1A1A1A;
+    --light-bg: #F9F7F2;
+    /* Crème (Fond de page) */
+    --white: #ffffff;
+
+    --font-main: 'Poppins', sans-serif;
+    --font-title: 'Paytone One', sans-serif;
+    --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+            .site-footer {
+                background-color: var(--secondary-color);
+               
+                color: var(--white);
+                padding: 80px 0 20px;
+                margin-top: 50px;
+            }
+
+            .footer-content {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 40px;
+                padding: 0 5%;
+                margin-bottom: 40px;
+            }
+
+            .footlinks h4 {
+                color: var(--header-bg);
+                
+                margin-bottom: 25px;
+                font-size: 22px;
+                font-family: var(--font-title);
+                position: relative;
+            }
+
+            .footlinks h4::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                width: 40px;
+                height: 3px;
+                background: var(--white);
+            }
+
+            .footlinks p {
+                font-size: 15px;
+                color: rgba(255, 255, 255, 0.9);
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+
+            .footlinks ul li {
+                margin-bottom: 12px;
+            }
+
+            .footlinks ul li a {
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.9);
+                transition: 0.3s ease;
+                display: block;
+            }
+
+            .footlinks ul li a:hover {
+                color: var(--header-bg);
+                transform: translateX(5px);
+                font-weight: 500;
+            }
+
+            .social a {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                background: rgba(255, 255, 255, 0.1);
+                color: var(--white);
+                border-radius: 50%;
+                margin-right: 10px;
+                font-size: 20px;
+                transition: 0.3s ease;
+            }
+
+            .social a:hover {
+                background: var(--header-bg);
+                color: var(--white);
+                transform: translateY(-3px);
+            }
+
+            .newsletter-input {
+                width: 100%;
+                padding: 12px;
+                border-radius: 5px;
+                border: none;
+                margin-bottom: 10px;
+                font-family: var(--font-main);
+            }
+
+            .newsletter-btn {
+                background: var(--primary-color);
+                /* BOUTON NEWSLETTER EN TERRA COTTA */
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+                width: 100%;
+                transition: 0.3s ease;
+            }
+
+            .newsletter-btn:hover {
+                background: #b5602a;
+            }
+
+            .copyright {
+                text-align: center;
+                padding-top: 20px;
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+
+
+
+
+            /* ===== SECTION FAQ ===== */
+
+.faq-section {
+    max-width: 900px;
+    margin: 110px auto 70px;          
+    padding: 35px 25px 40px;
+    background: var(--light-bg);      
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.10);
+}
+
+/* Titre FAQ */
+.faq-title {
+    font-family: var(--font-title);
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--secondary-color);   
+    margin-bottom: 15px;
+}
+
+.faq-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin: 10px auto 0;
+    border-radius: 999px;
+    background: var(--primary-color); 
+}
+
+/* Liste de questions / réponses */
+.faq {
+    border-bottom: 1px solid #e4decf;
+    padding: 14px 0;
+}
+
+.faq:last-child {
+    border-bottom: none;
+}
+
+/* Ligne question + flèche */
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 6px 2px;
+}
+
+.question h3 {
+    font-size: 1.1rem;
+    color: var(--dark-text);
+    font-weight: 600;
+}
+
+/* Petite interaction */
+.question:hover,
+.question:focus {
+    opacity: 0.9;
+}
+
+/* Flèche SVG */
+.faq-arrow path {
+    stroke: var(--primary-color);     
+    stroke-width: 7;
+    stroke-linecap: round;
+    transition: transform 0.35s ease, stroke 0.35s ease;
+}
+
+.faq.active .faq-arrow path {
+    transform: rotate(180deg);
+    stroke: var(--secondary-color);   
+}
+
+/* Zone réponse */
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding-right: 0.3rem;
+}
+
+.faq.active .answer {
+    max-height: 1000px;
+    animation: faq-fade 0.4s ease-in-out;
+}
+
+.answer p,
+.answer ul li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.answer ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+}
+
+/* Effet apparition */
+@keyframes faq-fade {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .faq-section {
+        margin: 100px 15px 50px;
+        padding: 25px 18px 30px;
+    }
+
+    .faq-title {
+        font-size: 2rem;
+    }
+
+    .question h3 {
+        font-size: 1rem;
+    }
+
+    .answer p,
+    .answer ul li {
+        font-size: 0.9rem;
+    }
+}
+.faq-arrow path {
+    stroke: var(--primary-color);  
+    stroke-width: 7;
+    stroke-linecap: round;
+    transition: 0.35s ease;
+}
+
+.faq.active .faq-arrow path {
+    transform: rotate(180deg);
+    stroke: var(--secondary-color);
+}
+

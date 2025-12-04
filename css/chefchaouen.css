@@ -1,0 +1,255 @@
+        /* --- 1. DESIGN SYSTEM (Identique à l'Index) --- */
+        :root {
+            --header-bg: #e3a857;       
+            --primary-color: #D97736;   
+            --secondary-color: #2F5233;
+            --accent-color: #F2A900;   
+            --dark-text: #1A1A1A;       
+            --light-bg: #F9F7F2;        
+            --footer-bg: #1e2621;       
+            --white: #ffffff;
+            --font-main: 'Poppins', sans-serif;
+            --font-title: 'Paytone One', sans-serif;
+            --transition: all 0.3s ease;
+        }
+
+        * { padding: 0; margin: 0; font-family: var(--font-main); text-decoration: none; list-style: none; box-sizing: border-box; }
+        body { background-color: var(--light-bg); color: var(--dark-text); overflow-x: hidden; }
+
+    
+
+        /* --- 3. INTRO / HERO SECTION --- */
+        .introduction { width: 100%; position: relative; height: 60vh; overflow: hidden; margin-top: 70px; /* Offset fixed header */ display: flex; justify-content: center; align-items: center; }
+        .introduction img { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1; animation: zoomIn 20s infinite alternate; }
+        @keyframes zoomIn { from { transform: scale(1); } to { transform: scale(1.1); } }
+        
+        .introduction h1 { 
+            position: relative; z-index: 2; color: #fff; font-size: 4rem; 
+            text-transform: uppercase; letter-spacing: 3px; 
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); 
+            animation: fadeDown 1.2s ease-out; 
+            background: rgba(0,0,0,0.3); padding: 10px 30px; border-radius: 10px;
+        }
+
+        /* --- 4. DESCRIPTION & TESTIMONIAL (Layout Modified) --- */
+        .descr-container {
+            width: 90%; margin: 60px auto; 
+            display: flex; gap: 40px; align-items: flex-start;
+        }
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;      
+    height: 100vh;
+}
+
+/* Le gestionnaire des images de fond */
+.background-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+/* L'overlay noir pour que le texte blanc soit lisible */
+.background-slider::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+}
+
+/* Les images individuelles */
+.background-slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    z-index: 0;
+
+    animation: imageFade 36s infinite; 
+}
+
+/* Le texte fixe au centre */
+.hero-content {
+    position: relative;
+    z-index: 2; 
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 60px; 
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+
+.background-slider img:nth-child(1) { animation-delay: 0s; }
+.background-slider img:nth-child(2) { animation-delay: 4s; }
+.background-slider img:nth-child(3) { animation-delay: 8s; }
+.background-slider img:nth-child(4) { animation-delay: 12s; }
+.background-slider img:nth-child(5) { animation-delay: 16s; }
+.background-slider img:nth-child(6) { animation-delay: 20s; }
+.background-slider img:nth-child(7) { animation-delay: 24s; }
+.background-slider img:nth-child(8) { animation-delay: 28s; }
+.background-slider img:nth-child(9) { animation-delay: 32s; }
+
+@keyframes imageFade {
+    0% { opacity: 0; }
+    2% { opacity: 1; }  
+    11% { opacity: 1; } 
+    13% { opacity: 0; } 
+    100% { opacity: 0; }
+}
+
+/* Responsive : Adaptation pour mobile */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 35px; }
+    .hero-content p { font-size: 18px; }
+}
+/* fin animation slide */
+
+        .descr-text {
+            flex: 1.5;
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 18px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+            line-height: 1.8;
+            font-size: 1.1rem;
+            text-align: justify;
+            color: #555;
+        }
+        .descr-text span { color: #4B8CC8; font-weight: 600; } /* Chefchaouen Blue */
+
+        /* Tourist Comment Card styling */
+        .tourist-comment {
+            flex: 1;
+            background: linear-gradient(135deg, #4B8CC8, #2A4D69); /* Blue Gradient */
+            color: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+            position: relative;
+            font-style: italic;
+        }
+        .tourist-comment i { font-size: 40px; opacity: 0.5; position: absolute; top: 20px; left: 20px; }
+        .comment-text { margin-top: 20px; font-size: 1.1rem; line-height: 1.6; }
+        .tourist-name { margin-top: 20px; font-weight: bold; text-align: right; font-style: normal; display: block; }
+        .stars { color: #FFD700; text-align: right; display: block; margin-top: 5px; }
+
+        @media (max-width: 900px) {
+            .descr-container { flex-direction: column; }
+        }
+
+        /* --- 5. TOPIC CARDS (No Scroll, Fitted) --- */
+        .topics-section { padding: 40px 5%; }
+        .cities-title { font-size: 2.5rem; font-weight: 700; margin-bottom: 40px; color: var(--secondary-color); text-align: center; font-family: var(--font-title); }
+.detail-header::after , .cities-title::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 5px;
+    background: var(--primary-color);
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+        
+        .topics-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+
+        .topic-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none; 
+            color: inherit;
+            display: flex; flex-direction: column;
+        }
+
+        .topic-card:hover { transform: translateY(-10px); }
+        .topic-card img { width: 100%; height: 200px; object-fit: cover; }
+        .topic-card h3 { font-size: 1.2rem; margin: 15px 0 5px; color: var(--primary-color); }
+        .topic-card p { font-size: 0.9rem; color: #666; padding: 0 10px 15px; }
+
+        /* Force responsive stacking on mobile, but keep inline on laptop */
+        @media (max-width: 900px) { .topics-container { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .topics-container { grid-template-columns: 1fr; } }
+
+        /* --- 6. DETAIL SLIDERS (Original Style, New Content) --- */
+        .detail-section { width: 90%; margin: 80px auto; scroll-margin-top: 100px; }
+        .detail-header { text-align: center; font-size: xx-large; margin-bottom: 20px; color: var(--secondary-color); font-family: var(--font-title); }
+
+        .detail-container {
+            display: flex; align-items: center; gap: 20px; padding: 20px;
+            background: #ffffff; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            position: relative; overflow: hidden; height: 400px;
+        }
+
+        .detail-container .arrow {
+            border: none; background: var(--header-bg); color: #fff;
+            width: 40px; height: 40px; border-radius: 50%; font-size: 24px;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; z-index: 10; transition: 0.3s;
+        }
+        .detail-container .arrow:hover { background: var(--primary-color); }
+
+        .slide-track { position: relative; width: 100%; height: 100%; }
+
+        .slide {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            display: flex; gap: 30px; align-items: center;
+            opacity: 0; transition: opacity 0.5s ease; pointer-events: none;
+        }
+        .slide.active { opacity: 1; pointer-events: auto; }
+
+        .slide img { width: 50%; height: 100%; border-radius: 15px; object-fit: cover; }
+        .detail-text { width: 50%; padding-right: 20px; }
+        .detail-text h2 { font-size: 1.8rem; margin-bottom: 15px; color: var(--primary-color); }
+        .detail-text p { font-size: 1rem; color: #555; line-height: 1.7; }
+
+        @media (max-width: 800px) {
+            .detail-container { height: auto; flex-direction: column; }
+            .slide { flex-direction: column; position: relative; display: none; }
+            .slide.active { display: flex; }
+            .slide img, .detail-text { width: 100%; }
+        }
+
+        /* --- 7. FOOTER UNIFIÉ --- */
+        .footer { background-color: var(--footer-bg); color: var(--white); padding: 80px 0 20px; margin-top: 50px; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; padding: 0 5%; margin-bottom: 40px; }
+        .footlinks h4 { color: var(--header-bg); margin-bottom: 25px; font-size: 22px; font-family: var(--font-title); position: relative; }
+        .footlinks h4::after { content: ''; position: absolute; left: 0; bottom: -8px; width: 40px; height: 3px; background: var(--white); }
+        .footlinks p { font-size: 15px; color: rgba(255,255,255,0.9); line-height: 1.6; margin-bottom: 15px; }
+        .footlinks ul li { margin-bottom: 12px; }
+        .footlinks ul li a { font-size: 16px; color: rgba(255,255,255,0.9); transition: 0.3s ease; display: block; }
+        .footlinks ul li a:hover { color: var(--header-bg); transform: translateX(5px); }
+        .social a { display: inline-flex; justify-content: center; align-items: center; width: 40px; height: 40px; background: rgba(255,255,255,0.1); color: var(--white); border-radius: 50%; margin-right: 10px; font-size: 20px; transition: 0.3s ease; }
+        .social a:hover { background: var(--header-bg); transform: translateY(-3px); }
+        .copyright { text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 14px; color: rgba(255,255,255,0.8); }

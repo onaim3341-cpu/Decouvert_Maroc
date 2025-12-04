@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Découvre le Maroc</title>
+    <link rel="icon" href="./files/logo.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="../css/style-about-1.css">
+    <link rel="stylesheet" href="../css/style-final.css">
+</head>
+
+<body>
+    <script src="../javaScript/script-final.js"></script>
+
+    <header>
+    <nav>
+            <img src="../files/logo.png" class="logo" alt="Logo" title="Découvre le Maroc">
+
+            <div class="links">
+                <ul class="navbar">
+                    <li><a id="nav-home" href="../index-final.html" class="active">Accueil</a></li>
+                    <li><a id="nav-ville" href="../index-final.html#ville">Villes</a></li>
+                    <li><a id="nav-contact" href="../pages_agence/contact.html">Contact</a></li>
+
+                    <!-- Recherche -->
+                    <li>
+                        <div class="search-container">
+                            <i class='bx bx-search' id="searchIcon"></i>
+                            <input type="text" id="searchInput" placeholder="Rechercher...">
+                        </div>
+                    </li>
+
+                    <!-- Météo -->
+                    <li class="weather-wrapper">
+                        <button id="showWeatherBtn" class="weather-toggle">Météo</button>
+
+                        <div class="weather-card" id="weatherCard" style="display: none;">
+                            <h2 id="weather-title">Météo</h2>
+                            <input type="text" id="city" placeholder="Entrez une ville">
+                            <button id="btn">Chercher</button>
+                            <div id="result"></div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <select id="langSelect">
+                            <option value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</header>
+
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="../files/logo.png" alt="Maroc Paysage">
+            </div>
+
+            <div class="about-text">
+                <h1 id="about-title">À <span>Propos</span></h1>
+                <p id="about-text">
+                    « Découvre le Maroc » est bien plus qu'un simple site web. C'est votre porte d'entrée numérique vers les merveilles du Royaume. Nous mettons en valeur la richesse des villes impériales, la diversité de la culture et la beauté époustouflante de la nature marocaine.
+                    <br><br>
+                    Que vous cherchiez des itinéraires d'aventure, des expériences culinaires authentiques ou simplement l'inspiration pour votre prochain voyage, nous sommes là pour vous guider.
+                </p>
+
+                <a href="contact.html" class="cta-btn">Contactez-nous</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class='bx bxs-compass feature-icon'></i>
+                <h3>Destinations Authentiques</h3>
+                <p>Nous sélectionnons les meilleurs endroits pour une expérience marocaine véritable.</p>
+            </div>
+            <div class="feature-card">
+                <i class='bx bxs-user-check feature-icon'></i>
+                <h3>Guides Experts</h3>
+                <p>Des conseils pratiques pour voyager en toute sérénité et sécurité.</p>
+            </div>
+            <div class="feature-card">
+                <i class='bx bxs-heart feature-icon'></i>
+                <h3>Passion du Voyage</h3>
+                <p>Une équipe passionnée dédiée à vous faire aimer le Maroc.</p>
+            </div>
+        </div>
+    </section>
+
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <!-- Bloc À propos -->
+        <div class="footlinks">
+            <h4 id="footer-about-title">Découvre le Maroc</h4>
+
+            <p id="footer-about-text">
+                Explorez la magie du Maroc avec nous. Des montagnes de l'Atlas aux dunes du Sahara,
+                nous vous guidons vers les meilleurs endroits.
+            </p>
+
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+
+        <!-- Bloc Liens rapides -->
+        <div class="footlinks">
+            <h4 id="footer-links-title">Liens Rapides</h4>
+
+            <ul>
+                <li><a id="footer-faq" href="../FAQ/FAQ.html">Questions fréquentes ?</a></li>
+                <li><a id="footer-home" href="../index-final.html">Accueil</a></li>
+                <li><a id="footer-villes" href="../index-final.html#ville">Villes</a></li>
+                <li><a id="footer-about" href="./about-1.html">À propos</a></li>
+                <li><a id="footer-contact" href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Contact -->
+        <div class="footlinks">
+            <h4 id="footer-contact-title">Contact</h4>
+
+            <ul>
+                <li><a id="footer-address" href="#"><i class='bx bxs-map'></i> Casablanca, Maroc</a></li>
+                <li><a id="footer-phone" href="#"><i class='bx bxs-phone'></i> +212 600 000 000</a></li>
+                <li><a id="footer-email" href="#"><i class='bx bxs-envelope'></i> info@maroctrip.ma</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Newsletter -->
+        <div class="footlinks">
+            <h4 id="footer-newsletter-title">Newsletter</h4>
+
+            <p id="footer-newsletter-text">
+                Abonnez-vous pour recevoir nos meilleures offres.
+            </p>
+
+            <form>
+                <input type="email" class="newsletter-input" placeholder="Votre Email"
+                       id="newsletter-input" aria-label="Email pour la newsletter">
+
+                <button type="button" class="newsletter-btn" id="newsletter-btn">
+                    S'abonner
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p id="footer-copy">&copy; 2025 Découvre le Maroc. Tous droits réservés.</p>
+    </div>
+</footer>
+
+
+<script src="../javaScript/script-final.js"></script>
+</body>
+
+</html>

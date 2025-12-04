@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fès</title>
+    <link rel="icon" href="../files/logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/style-final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="../css/fes.css">
+
+</head>
+  <body>
+    <script src="../javaScript/js/index.js"></script>
+    <script src="../javaScript/script-final.js"></script>
+<header>
+    <nav>
+        <img src="../files/logo.png" class="logo" alt="Logo" title="Découvre le Maroc">
+
+        <div class="links">
+                <ul class="navbar">
+                    <li><a id="nav-home" href="../index-final.html" class="active">Accueil</a></li>
+                    <li><a id="nav-ville" href="../index-final.html#ville">Villes</a></li>
+                    <li><a id="nav-contact" href="../pages_agence/contact.html">Contact</a></li>
+
+                    <!-- Recherche -->
+                    <li>
+                        <div class="search-container">
+                            <i class='bx bx-search' id="searchIcon"></i>
+                            <input type="text" id="searchInput" placeholder="Rechercher...">
+                        </div>
+                    </li>
+
+                    <!-- Météo -->
+                    <li class="weather-wrapper">
+                        <button id="showWeatherBtn" class="weather-toggle">Météo</button>
+
+                        <div class="weather-card" id="weatherCard" style="display: none;">
+                            <h2 id="weather-title">Météo</h2>
+                            <input type="text" id="city" placeholder="Entrez une ville">
+                            <button id="btn">Chercher</button>
+                            <div id="result"></div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <select id="langSelect">
+                            <option value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</header>
+
+    <main>
+     
+        <div class="slides">
+        <h1>Bienvenue à Fès</h1>
+        <p>Découvrez la capitale spirituelle du Maroc, entre médina, artisanat et histoire.</p>
+
+        </div>
+      <!--paragraph  + comment-->
+      <section class="paragraph">
+        <div class="two-column-layout">
+          <div class="description-text">
+            <p>
+              <span class="highlight">Fès</span>,est l'âme spirituelle et
+              culturelle du Maroc, fondée en <b>789 après J.-C</b>. et reconnue
+              comme la plus ancienne des villes impériales. Son atmosphère
+              spéciale provient de sa longue histoire multiculturelle et de sa
+              célèbre <b>médina de Fès-El-Bali</b>, classée au patrimoine
+              mondial de<b>l'UNESCO</b> . En s'aventurant au-delà du
+              <b>Bab Boujloud</b>, on découvre un immense labyrinthe de ruelles,
+              abritant <b>l'Université d'Al-Qarawiyyin</b> (859 après J.-C.), la
+              plus ancienne institution d'enseignement continu au monde, ainsi
+              que des lieux d'artisanat ancestral comme
+              <b>la Tannerie Chouara</b> . La ville est également un centre
+              culturel majeur , accueillant chaque année le prestigieux
+              <b>Festival des Musiques Sacrées du Monde</b> début mai, et elle
+              est renommée pour sa <b>gastronomie fassi</b> , considérée comme
+              l'une des plus raffinées du monde.
+            </p>
+          </div>
+
+          <div class="comments-grid">
+            <div class="comment-card">
+              <p class="quote">“</p>
+              <p class="testimonial-content">
+                Fès est une ville où l'histoire se vit. Pénétrer dans sa médina,
+                c'est se perdre volontairement dans un dédale de neuf mille
+                ruelles, guidé par le bruit des artisans et les parfums du cuir
+                et des épices. C'est une symphonie sensorielle enivrante, un
+                voyage au cœur du Maroc authentique.
+              </p>
+
+              <div class="author-info">
+                <div class="author-image-placeholder">
+                  <img src="../files/image_fes/Image_28.png" />
+                </div>
+
+                <p class="author-name">john B.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <h3 class="detail-title" id="Endroits-title">Découvrir Fès</h3>
+
+      <!--guid part-->
+      <div class="cards-container">
+        <!-- Activity 1 -->
+        <div class="card">
+          <img src="../files/image_fes/image1zellige.png" />
+          <h3>Les activitie a faire</h3>
+          <p>Expérience à Fès (ville classes UNESCO, artisanat, aventure).</p>
+          <button onclick="location.href='#activite'">Découvrir</button>
+        </div>
+
+        <!-- Restaurant -->
+        <div class="card">
+          <img src="../files/image_fes/rest-img.webp" />
+          <h3>Restaurants</h3>
+          <p>Cuisine marocaine raffinée et ambiance authentique.</p>
+          <button onclick="location.href='#restaurant'">Découvrir</button>
+        </div>
+
+        <!-- Place to Rent -->
+        <div class="card">
+          <img src="../files/image_fes/hebergement.webp" />
+          <h3>Hébergements</h3>
+          <p>Magnifique riad traditionnel . Parfait pour se loger.</p>
+          <button onclick="location.href='#rent'">Découvrir</button>
+        </div>
+
+        <!-- Place to Visit -->
+        <div class="card">
+          <img src="../files/image_fes/tennaris-Fez.jpg" />
+          <h3>Lieux à Visite</h3>
+          <p>
+            Fès, La Cité Millénaire : Itinéraire à Travers les Joyaux de
+            l'Architecture et de l'Artisanat.
+          </p>
+          <button onclick="location.href='#lieux'">Découvrir</button>
+        </div>
+      </div>
+
+      <!--next part-->
+      <!--activite-->
+      <h3 class="detail-title" id="Activités">Activités</h3>
+      <section id="activite" class="slider-section">
+        
+        <div class="slider1">
+          <div class="slides1">
+            <div class="slide active">
+              <img src="../files/image_fes/image1zellige.png" />
+              <div class="slide-content">
+                <h2>Atelier Zellige Traditionnel (Mosaïque)</h2>
+                <p>
+                  Durée : 1h30 a 3h Prix : 35€ a 50€ 
+                 Lieu : Coopératives d’Ain
+                Nokbi ou ateliers dans la médina Tu fais quoi : découper,
+                  assembler, polir ta propre mosaïque.
+                  </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="../files/image_fes/Atelier peinture.jpg" />
+              <div class="slide-content">
+                <h2>Peinture Artistique sur Poterie</h2>
+                <p>
+                  Durée : 1h → 2h Prix : 30€ → 45€
+                   Lieu : Ateliers de poterie
+                  (Ain Nokbi)
+                   Tu fais quoi : peinture sur céramique
+                  traditionnelle, motifs fassis.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="../files/image_fes/atelier de toournagedepoterie.jpg" />
+              <div class="slide-content">
+                <h2>Atelier de Tournage de Poterie</h2>
+                <p>
+                  Durée : 1h30 → 2h
+                   Prix : 25€ → 40€
+                    Lieu : Ain Nokbi, ateliers
+                  d’artisans 
+                  Tu fais quoi : façonner une coupe ou un bol à la
+                  main (argile).
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="../files/image_fes/Atelier de Cuisine Marocaine.jpg" />
+              <div class="slide-content">
+                <h2>Atelier de Cuisine Marocaine (Cours + Repas)</h2>
+                <p>
+                  Durée : 3h → 4h
+                   Prix : 40€ → 60€ 
+                   Lieu : Le Riad Layalina Fes
+                  Tu fais quoi : apprendre à faire un tajine, pain marocain, thé
+                  à la menthe.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="../files/image_fes/Hammam (1).webp" />
+              <div class="slide-content">
+                <h2>Hammam traditionnel + Gommage</h2>
+                <p>
+                  Durée : 30min → 1h30 
+                  Prix : 350dh → 600dh
+                   Lieu : Le Royal Medina Spa
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="../files/image_fes/tombeaux mérinides à fés.webp" />
+              <div class="slide-content">
+                <h2>Coucher de soleil aux Tombeaux Mérinides</h2>
+                <p>
+                  Durée : 45 min → 1h30 
+                  Prix : Taxi 50–70dh
+                   Lieu : Colline surplombant Fès .
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="arrow arrow-left">&#10094;</button>
+          <button class="arrow arrow-right">&#10095;</button>
+        </div>
+
+        <!--resto-->
+        
+      </section>
+      <h3 class="detail-title" id="Restaurants">Restaurants</h3>
+      <section id="restaurant" class="slider-section">
+        
+        <div class="slider1">
+          <div class="slides1">
+            <div class="slide active">
+              <img src="../files/image_fes/029_TheRuinedGarden-3.webp" />
+              <div class="slide-content">
+                <h3>The Ruined Garden</h3>
+                <p>
+                  Bonne cuisine marocaine traditionnelle dans un cadre intimiste
+                  — parfait pour un moment détente ou romantique. Ambiance :
+                  Calme, verdure, cadre charmant — idéal pour un déjeuner ou un
+                  dîner tranquille hors du tumulte de la médina
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="../files/image_fes/Cafe Clock Fes.jpg" alt="Cafe Clock" />
+              <div class="slide-content">
+                <h3>Cafe Clock</h3>
+                <p>
+                  Un café moderne offrant des spécialités locales et
+                  internationales.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="../files/image_fes/palais-amani-resto.webp" alt="Palais Amani" />
+              <div class="slide-content">
+                <h3>Palais Amani</h3>
+                <p>
+                  Une expérience gastronomique raffinée dans un cadre élégant.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                src="../files/image_fes/amandier-palais-restaurant-fes-rooftop.webp"
+              />
+              <div class="slide-content">
+                <h3>L’Amandier – Rooftop Garden</h3>
+                <p>
+                  Vue panoramique, idéal pour un dîner avec vue sur Fès, un bon
+                  compromis entre confort, cadre romantique et cuisine raffinée.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="../files/image_fes/jardin des biehn.jpg" />
+              <div class="slide-content">
+                <h3>Fez Café – Jardin des Biehn</h3>
+                <p>
+                  Relax, idéale pour un déjeuner ou une pause à midi, ou un
+                  dîner tranquille — coin verdure + déco sympa.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="../files/image_fes/Darori_Resto.jpg" />
+              <div class="slide-content">
+                <h3>Dar Ori</h3>
+                <p>
+                  Authentique, calme, bon rapport qualité/prix — une bonne
+                  option pour goûter des plats marocains classiques dans un
+                  cadre traditionnel.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="arrow arrow-left">&#10094;</button>
+          <button class="arrow arrow-right">&#10095;</button>
+        </div>
+      </section>
+
+      <!--place to visit-->
+     <h3 class="detail-title" id="Hébergement">Hébergement</h3>
+      <section id="lieux" class="slider-section">
+        <div class="slider1">
+          <div class="slides1">
+            <div class="slide active">
+              <img
+                src="../files/image_fes/al-quaraouiyine-Morocco.jpg"
+                alt="Mosquée Al Quaraouiyine"
+              />
+              <div class="slide-content">
+                <h3>Mosquée Al Quaraouiyine</h3>
+                <p>
+                  La mosquée Al Quaraouiyine, fondée au IXᵉ siècle, est un
+                  symbole spirituel et intellectuel de Fès, connue comme l’une
+                  des plus anciennes universités du monde. Son architecture
+                  andalouse en fait un lieu historique majeur..
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="../files/image_fes/Jardin Jnan Sbil Bou Jeloud Gardens in Fes Morocco.jpg"
+                alt="Jardin Jnan Sbil"
+              />
+              <div class="slide-content">
+                <h3>Jardin Jnan Sbil</h3>
+                <p>
+                  Le Jardin Jnan Sbil est un grand parc historique de Fès,
+                  apprécié pour ses allées ombragées, ses fontaines et ses
+                  jardins fleuris. C’est un lieu calme où habitants et visiteurs
+                  viennent se détendre, loin de l’agitation de la médina.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="../files/image_fes/Madrasa Bou Inania, Fès, Morocco.jpg"
+                alt="Madrasa Bou Inania"
+              />
+              <div class="slide-content">
+                <h3>Madrasa Bou Inania</h3>
+                <p>
+                  La Madrasa Bou Inania est l’une des plus belles écoles
+                  coraniques de Fès, célèbre pour ses bois sculptés, ses
+                  zelliges raffinés et son architecture mérinide. C’est un lieu
+                  historique remarquable, à la fois spirituel et artistique.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="../files/image_fes/Fez, Morocco_ An Aerial View of the Medina.jpg"
+                alt="Medina"
+              />
+              <div class="slide-content">
+                <h3>Medina de Fès</h3>
+                <p>
+                  La médina de Fès est l’une des plus anciennes et des mieux
+                  préservées du monde arabe. Avec ses ruelles étroites, ses
+                  souks animés et ses monuments historiques, elle offre une
+                  immersion unique dans l’histoire et l’artisanat marocain.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="../files/image_fes/Museo Nejjarine.jpg" alt="Musée Nejjarine" />
+              <div class="slide-content">
+                <h3>Musée Nejjarine</h3>
+                <p>
+                  Le Musée Nejjarine, installé dans un ancien foundouk restauré,
+                  présente de superbes collections d’objets en bois
+                  traditionnels. Son architecture et sa terrasse offrent aussi
+                  une vue magnifique sur la médina.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="../files/image_fes/Dar-Batha-Museum-Fes.webp" alt="Dar Batha" />
+              <div class="slide-content">
+                <h3>Dar Batha</h3>
+                <p>
+                  Dar Batha est un ancien palais transformé en musée, connu pour
+                  ses collections d’art traditionnel marocain : zelliges, bois
+                  sculpté, textiles et poteries. Son jardin andalou en fait
+                  aussi un lieu paisible et charmant.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="../files/image_fes/madrasa-w.jpeg" alt="Médersa Al Attarine" />
+              <div class="slide-content">
+                <h3>Médersa Al Attarine</h3>
+                <p>
+                  La Médersa Al Attarine, près d’Al Quaraouiyine à Fès, est une
+                  école coranique du XIVᵉ siècle connue pour son architecture
+                  exceptionnelle : zelliges, stucs sculptés et bois de cèdre.
+                  Petite mais très raffinée, c’est l’un des joyaux de la médina.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="../files/image_fes/tannery-w.webp" alt="Chouara Tannerie" />
+              <div class="slide-content">
+                <h3>Chouara Tannerie</h3>
+                <p>
+                  La Tannerie Chouara, la plus célèbre de Fès, utilise depuis
+                  des siècles des techniques traditionnelles pour teindre le
+                  cuir dans ses cuves colorées. Un lieu emblématique à observer
+                  depuis les terrasses.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="arrow arrow-left">&#10094;</button>
+          <button class="arrow arrow-right">&#10095;</button>
+        </div>
+      </section>
+
+      <!--rent -->
+<h3 class="detail-title" id="Endroits-title">Endroits</h3>
+      <section id="rent" class="slider-section">
+        
+        <div class="slider1">
+          <div class="slides1">
+            <div class="slide active">
+              <img src="../files/image_fes/raid-laaroussa.jpg" alt="Riad Laaroussa" />
+              <div class="slide-content">
+                <h3>Riad Laaroussa</h3>
+                <p>
+                  Le Riad Laaroussa est un Riad historique de luxe dans la
+                  Médina de Fès (près de Bab Boujloud). Il offre une
+                  architecture fassie splendide (zellige, boiseries) et est
+                  réputé pour son service et sa terrasse panoramique
+                  spectaculaire..
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="../files/image_fes/raid-fes.webp" alt="Riad Fes" />
+              <div class="slide-content">
+                <h3>Riad Fes – Relais & Châteaux</h3>
+                <p>
+                  Un riad élégant offrant un mélange parfait de tradition
+                  marocaine et confort moderne.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="../files/image_fes/palais-faraj.webp" alt="Palais Faraj" />
+              <div class="slide-content">
+                <h3>Palais Faraj</h3>
+                <p>
+                  Profitez d’une vue spectaculaire sur Fès depuis ce palais
+                  transformé en hôtel de luxe.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="../files/image_fes/Hotel+Sahrai.webp" alt="Hotel Sahrai" />
+              <div class="slide-content">
+                <h3>Hotel Sahrai</h3>
+                <p>
+                  Un hôtel moderne avec spa et piscine, idéal pour un séjour
+                  relaxant et raffiné.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                src="../files/image_fes/hotel-semlalia-fes.webp"
+                alt="Riad Semlalia"
+              />
+              <div class="slide-content">
+                <h3>Riad Semlalia</h3>
+                <p>
+                  Chambres confortables, rooftop / piscine (rarement dans les
+                  riads), calme malgré la proximité de la médina.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="../files/image_fes/riad-dar-lys.jpg" alt="Riad DAR LYS" />
+              <div class="slide-content">
+                <h3>Riad DAR LYS</h3>
+                <p>
+                  Spa / hammam bien-être, patio traditionnel, terrasse
+                  panoramique avec piscine, confort moderne.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="../files/image_fes/riad-hotel.webp" alt="Riad Fes Ziyat & Spa" />
+              <div class="slide-content">
+                <h3>Riad Fes Ziyat & Spa</h3>
+                <p>
+                  Terrasse, piscine ou patio agréable, bonne ambiance,
+                  spa/hammam possible, atmosphère chaleureuse.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="arrow arrow-left">&#10094;</button>
+          <button class="arrow arrow-right">&#10095;</button>
+        </div>
+      </section>
+
+      <!--neeeeeeeeext nearby-section-->
+      <section class="nearby-section">
+        <h2>EXPLORER LES ALENTOURS</h2>
+
+        <div class="cards">
+          <!-- CARD 1 -->
+          <div class="card1">
+            <div class="image-box">
+              <img src="../files/image_fes/rabat.jpg" alt="rabat" />
+              <span class="city-name">Rabat</span>
+            </div>
+
+            <div class="info-box">
+              <div class="left">
+                <h3>Fez</h3>
+                <p>Time 2 h 16 min</p>
+                <p>Distance 207,1 KM</p>
+                <h4>Rabat</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="card1">
+            <div class="image-box">
+              <img src="../files/image_fes/Ifrane.jpg" alt="" />
+              <span class="city-name">Ifrane</span>
+            </div>
+
+            <div class="info-box">
+              <div class="left">
+                <h3>Fez</h3>
+                <p>Time 1 h 16 min</p>
+                <p>Distance 71,6 KM</p>
+                <h4>Ifrane</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="card1">
+            <div class="image-box">
+              <img src="../files/image_fes/mekenas.webp" alt="meknes" />
+              <span class="city-name">Meknes</span>
+            </div>
+
+            <div class="info-box">
+              <div class="left">
+                <h3>Fez</h3>
+                <p>Time 0 h 52 min</p>
+                <p>Distance 63,8 KM</p>
+                <h4>Meknes</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <!-- Bloc À propos -->
+        <div class="footlinks">
+            <h4 id="footer-about-title">Découvre le Maroc</h4>
+
+            <p id="footer-about-text">
+                Explorez la magie du Maroc avec nous. Des montagnes de l'Atlas aux dunes du Sahara,
+                nous vous guidons vers les meilleurs endroits.
+            </p>
+
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+
+        <!-- Bloc Liens rapides -->
+        <div class="footlinks">
+            <h4 id="footer-links-title">Liens Rapides</h4>
+
+           <ul>
+                <li><a id="footer-faq" href="../FAQ/FAQ.html">Questions fréquentes ?</a></li>
+                <li><a id="footer-home" href="../index-final.html">Accueil</a></li>
+                <li><a id="footer-villes" href="../index-final.html#ville">Villes</a></li>
+                <li><a id="footer-about" href="../pages_agence/about-1.html">À propos</a></li>
+                <li><a id="footer-contact" href="../pages_agence/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Contact -->
+        <div class="footlinks">
+            <h4 id="footer-contact-title">Contact</h4>
+
+            <ul>
+                <li><a id="footer-address" href="#"><i class='bx bxs-map'></i> Casablanca, Maroc</a></li>
+                <li><a id="footer-phone" href="#"><i class='bx bxs-phone'></i> +212 600 000 000</a></li>
+                <li><a id="footer-email" href="#"><i class='bx bxs-envelope'></i> info@maroctrip.ma</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Newsletter -->
+        <div class="footlinks">
+            <h4 id="footer-newsletter-title">Newsletter</h4>
+
+            <p id="footer-newsletter-text">
+                Abonnez-vous pour recevoir nos meilleures offres.
+            </p>
+
+            <form>
+                <input type="email" class="newsletter-input" placeholder="Votre Email"
+                       id="newsletter-input" aria-label="Email pour la newsletter">
+
+                <button type="button" class="newsletter-btn" id="newsletter-btn">
+                    S'abonner
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p id="footer-copy">&copy; 2025 Découvre le Maroc. Tous droits réservés.</p>
+    </div>
+</footer>
+
+    <script src="../javaScript/fes.js"></script>
+
+  </body>
+</html>

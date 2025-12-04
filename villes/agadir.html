@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agadir</title>
+    <link rel="icon" href="../files/logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/style-final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="../css/agadir.css">
+
+</head>
+
+<body>
+  <script src="../javaScript/agadir.js"></script>
+  
+  <script src="../javaScript/script-final.js"></script>
+
+  <header>
+    <nav>
+      <img src="../files/logo.png" class="logo" alt="Logo" title="Découvre le Maroc">
+
+      <div class="links">
+        <ul class="navbar">
+          <li><a id="nav-home" href="../index-final.html" class="active">Accueil</a></li>
+          <li><a id="nav-ville" href="../index-final.html#ville">Villes</a></li>
+          <li><a id="nav-contact" href="../pages_agence/contact.html">Contact</a></li>
+
+          <!-- Recherche -->
+          <li>
+            <div class="search-container">
+              <i class='bx bx-search' id="searchIcon"></i>
+              <input type="text" id="searchInput" placeholder="Rechercher...">
+            </div>
+          </li>
+
+          <!-- Météo -->
+          <li class="weather-wrapper">
+            <button id="showWeatherBtn" class="weather-toggle">Météo</button>
+
+            <div class="weather-card" id="weatherCard" style="display: none;">
+              <h2 id="weather-title">Météo</h2>
+              <input type="text" id="city" placeholder="Entrez une ville">
+              <button id="btn">Chercher</button>
+              <div id="result"></div>
+            </div>
+          </li>
+
+
+          <li>
+            <select id="langSelect">
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!--images slides-->
+    <section class="slider">
+      <div class="slides">
+        <img src="../files/image_agadir/agadir.png" alt="Agadir" />
+        <h1>Bienvenu à Agadir</h1>
+        
+      </div>
+      
+      <div class="slides">
+        <img src="../files/image_agadir/La Médina d’Agadir (Polizzi Medina).jpg" alt="la médina agadir" />
+        <h1>Bienvenu à Agadir</h1>
+        
+      </div>
+
+      <div class="slides">
+        <img src="../files/image_agadir/La-kasbah.jpeg" alt="kasbah" />
+        <h1>Bienvenu à Agadir</h1>
+        
+      </div>
+
+      <div class="slides">
+        <img src="../files/image_agadir/licensed-image.jpg" alt="vue" />
+        <h1>Bienvenu à Agadir</h1>
+       
+      </div>
+    </section>
+    <!--paragraph  + comment-->
+    <section class="paragraph">
+      <div class="two-column-layout">
+        <div class="description-text">
+          <p>
+            <span class="highlight">Agadir</span> est une ville moderne et animée située sur la côte Atlantique du
+            Maroc. Réputée pour sa longue plage de sable doré et son climat ensoleillé toute l'année,
+            Agadir attire les amateurs de détente,
+            de sports nautiques et de gastronomie marocaine.
+            La ville combine modernité et culture :
+            vous pouvez vous promener le long de la corniche,
+            découvrir le marché traditionnel Souk El Had, visiter la Kasbah d'Agadir Oufella ou explorer les paysages
+            magnifiques des environs comme la vallée du Paradis. Agadir est une destination idéale pour profiter du
+            soleil,
+            de la mer et de l'hospitalité marocaine.
+          </p>
+        </div>
+
+        <div class="comments-grid">
+          <div class="comment-card">
+            <p class="quote">“</p>
+            <p class="testimonial-content">
+              Agadir est magnifique ! Entre la plage, la corniche et la vue depuis la Kasbah,
+              j'ai adoré chaque moment. Ville calme, ensoleillée et accueillante. Une vraie bouffée d’air frais.
+            </p>
+
+
+            <div class="author-info">
+              <div class="author-image-placeholder">
+                <img src="../files/image_agadir/avis.png">
+              </div>
+
+              <p class="author-name">Adam Benali</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--guid part-->
+    <h3 class="detail-title" id="Endroits-title">Découvrir Agadir</h3>
+    <div class="cards-container">
+
+      <!-- Experience -->
+      <div class="card">
+        <img src="../files/image_agadir/Souk-Agadir-mosquee.jpg" alt="experience" />
+        <h3>Expériences</h3>
+        <p>Vivez des moments authentiques, entre patrimoine, culture et aventures.</p>
+        <button onclick="location.href='#experience'">Découvrir</button>
+      </div>
+
+
+      <!-- Activité -->
+      <div class="card">
+        <img src="../files/image_agadir/surf.jpg" alt="activites" />
+        <h3>Activités</h3>
+        <p>Sports, loisirs et découvertes pour petits et grands.</p>
+        <button onclick="location.href='#activite'">Découvrir</button>
+      </div>
+
+      <!-- Hebergement -->
+      <div class="card">
+        <img src="../files/image_agadir/hebergement.jpg" alt="heberement" />
+        <h3>Hébergements</h3>
+        <p>Trouvez l'endroit parfait pour votre séjour.</p>
+        <button onclick="location.href='#heber'">Découvrir</button>
+      </div>
+
+      <!-- Autour -->
+      <div class="card">
+        <img src="../files/image_agadir/vallee.jpg" alt="autour agadir">
+        <h3>Autour Agadir</h3>
+        <p>Explorez les merveilles des environs et les trésors cachés.</p>
+        <button onclick="location.href='#autour'">Découvrir</button>
+      </div>
+    </div>
+
+    <!--  Experience   -->
+      <h3 class="detail-title" id="Endroits-title">Expériences</h3>
+    <section id="experience" class="slider-section">
+      <div class="slider1">
+        <div class="slides1">
+          <div class="slide active">
+            <img src="../files/image_agadir/Le-souk.jpeg" alt="souk el had" />
+            <div class="slide-content">
+              <h2>Souk El Had</h2>
+              <p>Reconnu comme le plus grand souk d'Afrique, le Souk El Had est ouvert au public tous les jours, à
+                l'exception</p>
+              <p>du lundi. C'est la destination idéale pour explorer l'authenticité et la richesse culturelle du Maroc,
+                de</p>
+              <p>son artisanat à ses saveurs.</p>
+              <p>Entrée gratuite.</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="../files/image_agadir/ouflla.jpg">
+            <div class="slide-content">
+              <h2>Kasbah Oufella</h2>
+              <p>Rendez-vous à la Kasbah Oufella, le symbole historique de la ville, pour une expérience visuelle
+                unique.</p>
+              <p>Ce lieu offre la vue panoramique la plus spectaculaire d'Agadir, particulièrement magique au moment du
+              </p>
+              <p>coucher du soleil.</p>
+              <p>Entrée gratuite.</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="../files/image_agadir/Crocoparc Agadir.jpg">
+            <div class="slide-content">
+              <h2>Crocoparc</h2>
+              <p>Le Crocoparc vous invite à une expérience unique et fascinante, alliant la découverte pédagogique de
+              </p>
+              <p>crocodiles et autres animaux exotiques à la sérénité d'un magnifique jardin botanique. C'est le lieu
+              </p>
+              <p></p>idéal pour apprendre en famille dans une ambiance naturelle et apaisante.</p>
+              <p>Entrée Payante</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="../files/image_agadir/Agadir Marina.jpg">
+            <div class="slide-content">
+              <h2>La Marina</h2>
+              <p>Découvrez la Marina d’Agadir, un port de plaisance moderne synonyme de luxe au bord de l'Atlantique.
+              </p>
+              <p>Entre shopping haut de gamme, restaurants gastronomiques et sports nautiques, vivez une expérience</p>
+              <p>marocaine raffinée et mémorable.</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="../files/image_agadir/musee.jpg">
+            <div class="slide-content">
+              <h2>Musée du Patrimoine Amazigh</h2>
+              <p>Découvrez la richesse de la culture amazighe (berbère) au Musée du Patrimoine d’Agadir. Une visite</p>
+              <p>s'impose pour admirer ses trésors historiques et artistiques et</p>
+              <p>Entrée Payante</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="arrow arrow-left">&#10094;</button>
+        <button class="arrow arrow-right">&#10095;</button>
+      </div>
+ </section>
+     
+   
+    <h3 class="detail-title" id="Endroits-title">Activités</h3>
+    <section id="activite" class="slider-section">
+      <div class="slider1">
+        <div class="slides1">
+          <div class="slide active">
+            <img src="../files/image_agadir/telepherique.jpg">
+            <div class="slide-content">
+              <h3>Téléphérique</h3>
+              <p>Embarquez à bord du téléphérique d'Agadir pour une montée spectaculaire offrant une vue panoramique</p>
+              <p>fascinante sur la plage, la baie et l'océan Atlantique. C'est également le moyen le plus simple et le
+              </p>
+              <p>plus divertissant d'accéder à la Kasbah Oufella.</p>
+              <p>Trajet Payant</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="../files/image_agadir/Montgolfière.jpg" alt="Cafe Clock">
+            <div class="slide-content">
+              <h3>Vol en Montgolfière</h3>
+              <p>Prenez de la hauteur avec un vol en montgolfière magique dans la région d'Agadir.</p>
+              <p>Tarif:250$</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="../files/image_agadir/Balade.jpg" alt="Palais Amani">
+            <div class="slide-content">
+              <h3>Balade Dromadaire</h3>
+              <p>Profitez d'une balade à dos de dromadaire pour un moment de tranquillité à Agadir. Laissez-vous guider
+                le</p>
+              <p>long de la plage ou des rives de l'oued Souss, surtout au coucher du soleil, pour une expérience
+                marocaine</p>
+              <p>authentique et reposante loin du tumulte de la ville.</p>
+              <p>Tarif:30$</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="../files/image_agadir/Quad.jpeg">
+            <div class="slide-content">
+              <h3>Quad</h3>
+              <p>Lancez-vous dans une aventure excitante en Quad à Agadir ! Explorez les paysages côtiers, les dunes de
+              </p>
+              <p>sable et les pistes berbères de l'arrière-pays. C'est une activité parfaite pour les amateurs de
+                sensations</p>
+              <p>fortes et pour découvrir la région de manière rapide et amusante.</p>
+              <p>Tarif: 25$</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="../files/image_agadir/learning.jpg">
+            <div class="slide-content">
+              <h3>Surf</h3>
+              <p>Profitez des longues plages d'Agadir et des vagues douces de la région pour apprendre le surf !</p>
+              <p>De nombreuses écoles proposent des cours adaptés aux débutants, notamment près de Taghazout.</p>
+              <p>C'est l'activité idéale pour s'amuser et être en contact avec l'océan.</p>
+              <p>Tarif: 25$</p>
+            </div>
+          </div>
+
+        </div>
+        <button class="arrow arrow-left">&#10094;</button>
+        <button class="arrow arrow-right">&#10095;</button>
+      </div>
+    </section>
+
+    <!---heber---->
+    <h3 class="detail-title" id="Endroits-title">Hébergement</h3>
+    <section id="heber" class="slider-section">
+      <div class="slider1">
+        <div class="slides1">
+          <div class="slide active">
+            <img src="../files/image_agadir/riad haven.jpg" alt="riad haven">
+            <div class="slide-content">
+              <h3>Riad Dar Haven</h3>
+              <p>Le riad est magnifique particulièrement sa piscine intérieure et sa terrasse sur le toit avec une vue
+                splendide</p>
+              <p>sur la mer.</p>
+              <p>Tarif=110$</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../files/image_agadir/riad asmaa.jpg" alt="riad asma">
+            <div class="slide-content">
+              <h3>Riad Asmaa</h3>
+              <p>Le Riad Asmaa est un établissement paisible et élégant près d'Agadir, offrant une immersion dans
+                l'hospitalité</p>
+              <p>berbère (Amazigh).</p>
+              <p>Tarif:73$</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../files/image_agadir/riad blanche.jpg" alt="riade blanche">
+            <div class="slide-content">
+              <h3>Riad Villa Blanche</h3>
+              <p>Le Riad Villa Blanche est un hôtel de luxe élégant situé sur le front de mer d'Agadir. Offrant une
+                ambiance</p>
+              <p>de boutique-hôtel raffinée, il est célèbre pour son Spa luxueux et son design moderne inspiré du Maroc.
+              </p>
+              <p>Tarif:200$</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../files/image_agadir/boho.jpg" alt="boho">
+            <div class="slide-content">
+              <h3>Moroccan Boho House</h3>
+              <p>Ces options suggèrent des maisons d'hôtes plus intimes ou des locations de style "bohémien marocain",
+              </p>
+              <p>idéales pour une immersion dans un décor soigné et traditionnel.</p>
+              <p>Tarif:25$</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../files/image_agadir/chtis.jpg" alt="chtis">
+            <div class="slide-content">
+              <h3>Riad Les Chtis d'Agadir</h3>
+              <p>Le « Riad Les Chtis d’Agadir » est une maison d’hôtes en centre-ville, à dix minutes à pieds des plus
+                grands</p>
+              <p>souks d’Afrique</p>
+              <p>Tarif:59$</p>
+            </div>
+          </div>
+
+        </div>
+        <button class="arrow arrow-left">&#10094;</button>
+        <button class="arrow arrow-right">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- autour -->
+    <h3 class="detail-title" id="Endroits-title">Autour Agadir</h3>
+    <section id="autour" class="slider-section">
+
+      <div class="slider1">
+        <div class="slides1">
+          <div class="slide active">
+            <img src="../files/image_agadir/taghazout.jpg" alt="taghazout">
+            <div class="slide-content">
+              <h3>Taghazout</h3>
+              <p>Taghazout : surf, plages dorées et ambiance bohème sur la côte Atlantique.</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="../files/image_agadir/legzira.jpg" alt="legzira">
+            <div class="slide-content">
+              <h3>Plage de Legzira</h3>
+              <p>Legzira : plage de rêve, nature préservée et couchers de soleil magiques à 3h d'Agadir.</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="../files/image_agadir/mirleft.jpg" alt="mirleft">
+            <div class="slide-content">
+              <h3>Mirleft</h3>
+              <p>Mirleft : village côtier authentique, plages tranquilles et paysages à couper le souffle.</p>
+            </div>
+          </div>
+
+
+          <div class="slide">
+            <img src="../files/image_agadir/tafraout.jpg" alt="tafraout">
+            <div class="slide-content">
+              <h3>Tafraout</h3>
+              <p>Tafraout : paysages rocheux uniques, villages berbères traditionnels et nature préservée au cœur de
+                l’Anti-Atlas.</p>
+            </div>
+          </div>
+
+
+          <div class="slide">
+            <img src="../files/image_agadir/vallee paradid.jpg" alt="valle paradid">
+            <div class="slide-content">
+              <h3>Vallée du Paradis</h3>
+              <p>Vallée du Paradis : oasis de cascades, piscines naturelles et nature sauvage à couper le souffle.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="arrow arrow-left">&#10094;</button>
+        <button class="arrow arrow-right">&#10095;</button>
+      </div>
+    </section>
+
+  </main>
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <!-- Bloc À propos -->
+        <div class="footlinks">
+            <h4 id="footer-about-title">Découvre le Maroc</h4>
+
+            <p id="footer-about-text">
+                Explorez la magie du Maroc avec nous. Des montagnes de l'Atlas aux dunes du Sahara,
+                nous vous guidons vers les meilleurs endroits.
+            </p>
+
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+
+        <!-- Bloc Liens rapides -->
+        <div class="footlinks">
+            <h4 id="footer-links-title">Liens Rapides</h4>
+
+            <ul>
+                <li><a id="footer-faq" href="../FAQ/FAQ.html">Questions fréquentes ?</a></li>
+                <li><a id="footer-home" href="../index-final.html">Accueil</a></li>
+                <li><a id="footer-villes" href="../index-final.html#ville">Villes</a></li>
+                <li><a id="footer-about" href="../pages_agence/about-1.html">À propos</a></li>
+                <li><a id="footer-contact" href="../pages_agence/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Contact -->
+        <div class="footlinks">
+            <h4 id="footer-contact-title">Contact</h4>
+
+            <ul>
+                <li><a id="footer-address" href="#"><i class='bx bxs-map'></i> Casablanca, Maroc</a></li>
+                <li><a id="footer-phone" href="#"><i class='bx bxs-phone'></i> +212 600 000 000</a></li>
+                <li><a id="footer-email" href="#"><i class='bx bxs-envelope'></i> info@maroctrip.ma</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Newsletter -->
+        <div class="footlinks">
+            <h4 id="footer-newsletter-title">Newsletter</h4>
+
+            <p id="footer-newsletter-text">
+                Abonnez-vous pour recevoir nos meilleures offres.
+            </p>
+
+            <form>
+                <input type="email" class="newsletter-input" placeholder="Votre Email"
+                       id="newsletter-input" aria-label="Email pour la newsletter">
+
+                <button type="button" class="newsletter-btn" id="newsletter-btn">
+                    S'abonner
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p id="footer-copy">&copy; 2025 Découvre le Maroc. Tous droits réservés.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chefchaouen</title>
+    <link rel="icon" href="../files/logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/style-final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="../css/chefchaouen.css">
+
+</head>
+
+<body>
+    <script src="../javaScript/chefch.js"></script>
+    <script src="../javaScript/script-final.js"></script>
+
+    <header>
+    <nav>
+        <img src="../files/logo.png" class="logo" alt="Logo" title="Découvre le Maroc">
+
+       <div class="links">
+                <ul class="navbar">
+                    <li><a id="nav-home" href="../index-final.html" class="active">Accueil</a></li>
+                    <li><a id="nav-ville" href="../index-final.html#ville">Villes</a></li>
+                    <li><a id="nav-contact" href="../pages_agence/contact.html">Contact</a></li>
+
+                    <!-- Recherche -->
+                    <li>
+                        <div class="search-container">
+                            <i class='bx bx-search' id="searchIcon"></i>
+                            <input type="text" id="searchInput" placeholder="Rechercher...">
+                        </div>
+                    </li>
+
+                    <!-- Météo -->
+                    <li class="weather-wrapper">
+                        <button id="showWeatherBtn" class="weather-toggle">Météo</button>
+
+                        <div class="weather-card" id="weatherCard" style="display: none;">
+                            <h2 id="weather-title">Météo</h2>
+                            <input type="text" id="city" placeholder="Entrez une ville">
+                            <button id="btn">Chercher</button>
+                            <div id="result"></div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <select id="langSelect">
+                            <option value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</header>
+
+    <section class="hero-section">
+        <div class="background-slider">
+            <img src="../files/image_chefchaouen/chefchaouen (1).jpg" alt="Chefchaouen">
+            <img src="../files/image_chefchaouen/chefchaouen (2).jpg" alt="Chefchaouen">
+            <img src="../files/image_chefchaouen/chefchaouen (3).jpg" alt="Chefchaouen">
+            <img src="../files/image_chefchaouen/chefchaouen (4).jpg" alt="Chefchaouen">
+            <img src="../files/image_chefchaouen/chefchaouen (5).jpg" alt="Chefchaouen">
+            <img src="../files/image_chefchaouen/chefchaouen (6).jpg" alt="Chefchaouen">
+            <img src="../files/image_chefchaouen/chefchaouen (7).jpg" alt="Chefchaouen">
+            <img src="../files/image_chefchaouen/chefchaouen (8).jpg" alt="Chefchaouen">
+            <img src="../files/image_chefchaouen/chefchaouen (9).jpg" alt="Chefchaouen">
+        </div>
+
+        <div class="hero-content">
+            <h1>Bienvenue à Chefchaouen</h1>
+            <p>La Ville Sainte peinte en bleu, un havre de paix au cœur du Rif.</p>
+        </div>
+    </section>
+
+    <div class="descr-container">
+        <div class="descr-text">
+            <p>
+                <span>Chefchaouen</span>, surnommée la "Perle Bleue", est une ville magique nichée dans les montagnes du Rif. Fondée en 1471, elle est célèbre pour ses maisons peintes dans différentes nuances de bleu, créant une atmosphère de rêve et de sérénité.
+                <br><br>
+                C'est une destination idéale pour les amoureux de la photographie, les randonneurs et ceux qui cherchent l'authenticité. Flâner dans sa médina, c'est découvrir un artisanat riche (laine, tissage), sentir l'odeur du pain frais et du fromage de chèvre local, et se perdre volontairement dans un labyrinthe couleur azur.
+            </p>
+        </div>
+        
+        <div class="tourist-comment">
+            <i class='bx bxs-quote-alt-left'></i>
+            <p class="comment-text">"Je n'ai jamais rien vu de tel. Chaque coin de rue est une œuvre d'art. Les habitants sont incroyablement accueillants et la nourriture est délicieuse. C'est comme marcher à l'intérieur d'un rêve bleu. Inoubliable !"</p>
+            <span class="tourist-name">- Sarah M., Voyageuse</span>
+            <span class="stars">★★★★★</span>
+        </div>
+    </div>
+    
+    <section class="topics-section">
+        <h2 class="cities-title">Explorez la ville</h2>
+
+        <div class="topics-container">
+            <a href="#lieux" class="topic-card">
+                <img src="../files/image_chefchaouen/places_bckg.jpg" alt="Lieux à visiter">
+                <h3>Lieux à visiter</h3>
+                <p>Les spots incontournables.</p>
+            </a>
+
+            <a href="#activites" class="topic-card">
+                <img src="../files/image_chefchaouen/activity_bckg.webp" alt="Activités">
+                <h3>Activités</h3>
+                <p>Randonnées et culture.</p>
+            </a>
+
+            <a href="#hotels" class="topic-card">
+                <img src="../files/image_chefchaouen/hotels_bckg.webp" alt="Hôtels">
+                <h3>Hôtels</h3>
+                <p>Séjours en Riad de charme.</p>
+            </a>
+
+            <a href="#restaurants" class="topic-card">
+                <img src="../files/image_chefchaouen/restaurants_bckg.png" alt="Restaurants">
+                <h3>Restaurants</h3>
+                <p>Saveurs locales du Rif.</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="lieux" class="detail-section">
+        <h3 class="detail-header">Lieux Incontournables</h3>
+        <div class="detail-container">
+            <button class="arrow left">&#10094;</button>
+            <div class="slide-track">
+                <div class="slide active">
+                    <img src="../files/image_chefchaouen/place1_bckg.webp" alt="Médina Bleue">
+                    <div class="detail-text">
+                        <h2>La Médina Bleue</h2>
+                        <p>Le cœur historique de la ville. Un labyrinthe de ruelles étroites aux murs peints à la chaux bleue. Chaque porte est une opportunité photo unique.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_chefchaouen/place2_bckg.webp">
+                    <div class="detail-text">
+                        <h2>Kasbah & Musée</h2>
+                        <p>Située sur la place Uta el-Hammam, cette forteresse en pisé abrite un magnifique jardin andalou et un musée ethnographique.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_chefchaouen/place3_bckg.webp" alt="Ras El Maa"> <div class="detail-text">
+                        <h2>Source Ras El Maa</h2>
+                        <p>La source sacrée qui alimente la ville en eau. C'est un lieu de vie où les femmes lavent le linge et où l'on profite de la fraîcheur.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="activites" class="detail-section">
+        <h3 class="detail-header">Activités & Aventure</h3>
+        <div class="detail-container">
+            <button class="arrow left">&#10094;</button>
+            <div class="slide-track">
+                <div class="slide active">
+                    <img src="../files/image_chefchaouen/activity1.jpg" alt="Randonnée Akchour">
+                    <div class="detail-text">
+                        <h2>Randonnée Akchour</h2>
+                        <p>À 45min de la ville, découvrez les cascades d'Akchour et le fameux Pont de Dieu. Une randonnée inoubliable dans une nature luxuriante.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_chefchaouen/activity2.jpg">
+                    <div class="detail-text">
+                        <h2>Mosquée Espagnole</h2>
+                        <p>Une petite randonnée de 20min pour atteindre cette mosquée abandonnée qui offre la meilleure vue panoramique sur la ville au coucher du soleil.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="hotels" class="detail-section">
+        <h3 class="detail-header">Où Dormir (Riads)</h3>
+        <div class="detail-container">
+            <button class="arrow left">&#10094;</button>
+            <div class="slide-track">
+                <div class="slide active">
+                    <img src="../files/image_chefchaouen/hotel1.jpg">
+                    <div class="detail-text">
+                        <h2>Riad Lina & Spa</h2>
+                        <p>Luxe et détente. Profitez de sa piscine intérieure chauffée et de sa terrasse avec vue imprenable sur la médina.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_chefchaouen/hotel2.jpg">
+                    <div class="detail-text">
+                        <h2>Dar Echchaouen</h2>
+                        <p>Un style traditionnel avec tout le confort moderne, situé juste à l'entrée de la médina avec un parking facile d'accès.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="restaurants" class="detail-section">
+        <h3 class="detail-header">Gastronomie Locale</h3>
+        <div class="detail-container">
+            <button class="arrow left">&#10094;</button>
+            <div class="slide-track">
+                <div class="slide active">
+                    <img src="../files/image_chefchaouen/resto1.jpg">
+                    <div class="detail-text">
+                        <h2>Restaurant Bab Ssour</h2>
+                        <p>Cuisine maison authentique. Essayez leur tajine de chèvre aux pruneaux ou leur fameuse bissara.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../files/image_chefchaouen/resto2.jpg">
+                    <div class="detail-text">
+                        <h2>Café Clock</h2>
+                        <p>Un lieu culturel moderne avec une terrasse superbe. Parfait pour écouter de la musique live et goûter au burger de chameau.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right">&#10095;</button>
+        </div>
+    </section>
+
+
+           <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footlinks">
+                <h4 id="footer-about-title">Découvre le Maroc</h4>
+                <p>Explorez la magie du Maroc avec nous. Des montagnes de l'Atlas aux dunes du Sahara, nous vous guidons vers les meilleurs endroits.</p>
+                <div class="social">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+
+            <div class="footlinks">
+                <h4 id="footer-links-title">Liens Rapides</h4>
+                <ul>
+                <li><a id="footer-faq" href="../FAQ/FAQ.html">Questions fréquentes ?</a></li>
+                <li><a id="footer-home" href="../index-final.html">Accueil</a></li>
+                <li><a id="footer-villes" href="../index-final.html#ville">Villes</a></li>
+                <li><a id="footer-about" href="../pages_agence/about-1.html">À propos</a></li>
+                <li><a id="footer-contact" href="../pages_agence/contact.html">Contact</a></li>
+            </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#"><i class='bx bxs-map'></i> Casablanca, Maroc</a></li>
+                    <li><a href="#"><i class='bx bxs-phone'></i> +212 600 000 000</a></li>
+                    <li><a href="#"><i class='bx bxs-envelope'></i> info@maroctrip.ma</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Newsletter</h4>
+                <p>Abonnez-vous pour recevoir nos meilleures offres.</p>
+                <form>
+                    <input type="email" class="newsletter-input" placeholder="Votre Email" aria-label="Email pour la newsletter">
+                    <button type="button" class="newsletter-btn">S'abonner</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Découvre le Maroc. Tous droits réservés.</p>
+        </div>
+    </footer> 
+    
+</body>
+</html>

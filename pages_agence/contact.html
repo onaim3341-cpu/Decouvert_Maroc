@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="../files/logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/style-final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body class="contactbody">
+    <script src="../javaScript/script-final.js"></script>
+
+    <nav>
+        <img src="../files/logo.png" class="logo" alt="Logo" title="Découvre le Maroc">
+
+        <ul class="navbar">
+            <li><a id="nav-home" href="../index-final.html">Accueil</a></li>
+            <li><a id="nav-ville" href="./index.html#ville">Villes</a></li>
+            <li><a id="nav-about" href="./about-1.html">À propos</a></li>
+            <li><a id="nav-contact" href="#top">Contact</a></li>
+
+            <!-- Recherche -->
+            <li>
+                <div class="search-container">
+                    <i class='bx bx-search' id="searchIcon"></i>
+                    <input type="text" id="searchInput" placeholder="Rechercher...">
+                </div>
+            </li>
+
+            <!-- Météo -->
+            <li>
+                <button id="showWeatherBtn" class="weather-toggle">Météo</button>
+
+                <div class="weather-card" id="weatherCard" style="display: none;">
+                    <h2>Météo</h2>
+                    <input type="text" id="city" placeholder="Entrez une ville">
+                    <button id="btn">Chercher</button>
+                    <div id="result"></div>
+                </div>
+            </li>
+
+            <!-- langue -->
+            <li>
+                <select id="langSelect">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+   
+
+<section class="contact"> 
+    <div class="contact-form">
+        <h1 id="contact-title">Contactez<span>-Nous</span></h1>
+
+        <form>
+            <input type="text" name="myname" id="contact-name"
+                   placeholder="Votre nom"
+                   pattern="^[A-Za-zÀ-ÿ\s]{2,40}$" required>
+
+            <input type="email" name="email" id="contact-email"
+                   placeholder="Votre e-mail"
+                   pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$" required>
+
+            <input type="text" name="subject" id="contact-subject"
+                   placeholder="Qu'est-ce qui vous amène ?"
+                   pattern="^[A-Za-zÀ-ÿ0-9 ,.'?!-]{3,60}$" required>
+
+            <textarea name="message" id="contact-message" rows="5"
+                      placeholder="Votre message" required></textarea>
+
+            <input type="submit" value="Envoyer" id="contact-submit" class="submit-btn">
+        </form>
+    </div>
+</section>
+
+
+
+       <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footlinks">
+                <h4 id="footer-about-title">Découvre le Maroc</h4>
+                <p>Explorez la magie du Maroc avec nous. Des montagnes de l'Atlas aux dunes du Sahara, nous vous guidons vers les meilleurs endroits.</p>
+                <div class="social">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+            </div>
+            </div>
+
+            <div class="footlinks">
+                <h4 id="footer-links-title">Liens Rapides</h4>
+                <ul>
+                    <li><a href="../FAQ/FAQ.html">Questions fréquentes ?</a></li>
+                    <li><a href="../index-final.html">Accueil</a></li>
+                    <li><a href="../index-final.html#ville">Villes</a></li>
+                    <li><a href="./about-1.html">À propos</a></li>
+                    <li><a href="#top">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#"><i class='bx bxs-map'></i> Casablanca, Maroc</a></li>
+                    <li><a href="#"><i class='bx bxs-phone'></i> +212 600 000 000</a></li>
+                    <li><a href="#"><i class='bx bxs-envelope'></i> info@maroctrip.ma</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Newsletter</h4>
+                <p>Abonnez-vous pour recevoir nos meilleures offres.</p>
+                <form>
+                    <input type="email" class="newsletter-input" placeholder="Votre Email" aria-label="Email pour la newsletter">
+                    <button type="button" class="newsletter-btn">S'abonner</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Découvre le Maroc. Tous droits réservés.</p>
+        </div>
+    </footer> 
+</body>
+
+</html>

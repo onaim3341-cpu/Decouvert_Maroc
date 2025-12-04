@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marrakech</title>
+    <link rel="icon" href="../files/logo.png">
+    <!-- <link rel="stylesheet" href="../css/style-final.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="../css/marrakech.css" />
+    <link rel="stylesheet" href="../css/style-final.css" /> 
+    
+</head>
+
+<body>
+    <script src="../javaScript/marrakech.js"></script>
+    <script src="../javaScript/script-final.js"></script>
+
+     <header>
+    <nav>
+        <img src="../files/logo.png" class="logo" alt="Logo" title="Découvre le Maroc">
+
+       <div class="links">
+                <ul class="navbar">
+                    <li><a id="nav-home" href="../index-final.html" class="active">Accueil</a></li>
+                    <li><a id="nav-ville" href="../index-final.html#ville">Villes</a></li>
+                    <li><a id="nav-contact" href="../pages_agence/contact.html">Contact</a></li>
+
+                    <!-- Recherche -->
+                    <li>
+                        <div class="search-container">
+                            <i class='bx bx-search' id="searchIcon"></i>
+                            <input type="text" id="searchInput" placeholder="Rechercher...">
+                        </div>
+                    </li>
+
+                    <!-- Météo -->
+                    <li class="weather-wrapper">
+                        <button id="showWeatherBtn" class="weather-toggle">Météo</button>
+
+                        <div class="weather-card" id="weatherCard" style="display: none;">
+                            <h2 id="weather-title">Météo</h2>
+                            <input type="text" id="city" placeholder="Entrez une ville">
+                            <button id="btn">Chercher</button>
+                            <div id="result"></div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <select id="langSelect">
+                            <option value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</header>
+
+    <main>
+        <div class="slides">
+            <h1>Bienvenue à Marrakech</h1>
+        </div>
+        <!--paragraph  + comment-->
+        <section class="paragraph">
+            <div class="two-column-layout">
+                <div class="description-text">
+                    <p>
+                        Marrakech, surnommée la « Ville Ocre » en raison de la couleur rouge de ses remparts et de ses
+                        bâtiments traditionnels en pisé, est le cœur vibrant et culturel du Maroc. Fondée au XIe siècle,
+                        elle est célèbre dans le monde entier pour sa Médina animée, un site classé au patrimoine
+                        mondial de l'UNESCO. Le cœur de la Médina est l'incontournable Place Jemaa el-Fna, qui se
+                        transforme au coucher du soleil en un immense théâtre à ciel ouvert, rempli de conteurs,
+                        musiciens, et stands de nourriture. Au-delà du tumulte des souks labyrinthiques, Marrakech est
+                        une ville de contrastes, offrant des jardins luxuriants comme le Jardin Majorelle avec son bleu
+                        éclatant, des palais somptueux comme le Palais de la Bahia, et elle sert de porte d'entrée aux
+                        majestueuses montagnes de l'Atlas.
+                    </p>
+                </div>
+
+                <div class="comments-grid">
+                    <div class="comment-card">
+                        <p class="quote">“</p>
+                        <p class="testimonial-content">Marrakech est une expérience totale ! On ne s'ennuie jamais,
+                            entre l'énergie vibrante de Jemaa el-Fna et le calme absolu des jardins secrets. J'ai aimé
+                            chaque seconde passée dans cette Ville Ocre, un lieu plein de magie et de contrastes
+                            inoubliables
+
+                        </p>
+
+
+                        <div class="author-info">
+                            <div class="author-image">
+                                <img src="../files/image_marrakech/cc.jfif">
+                            </div>
+
+
+                            <p class="author-name">Serena R. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--guid part-->
+       <h3 class="detail-title" id="Endroits-title">Découvrir Marrakech</h3>
+
+        <div class="cards-container">
+
+            <!-- Activity 1 -->
+            <div class="card">
+                <img src="../files/image_marrakech/Jemaa el-Fna.jfif">
+                <h3>Les activitie a faire</h3>
+                <p>Expérience à Marrakech.</p>
+                <button onclick="location.href='#activite'">Découvrir</button>
+            </div>
+
+
+            <!-- Restaurant -->
+            <div class="card">
+                <img src="../files/image_marrakech/Dar Marjana - Dar Marjana restaurant Marrakech.jfif">
+                <h3>Restaurants</h3>
+                <p>Cuisine marocaine raffinée et ambiance authentique.</p>
+                <button onclick="location.href='#restaurant'">Découvrir</button>
+            </div>
+
+            <!-- Place to Rent -->
+            <div class="card">
+                <img src="../files/image_marrakech/mansour marrakech.jfif">
+                <h3>Hébergements</h3>
+                <p>Magnifique riad traditionnel . Parfait pour se loger.</p>
+                <button onclick="location.href='#rent'">Découvrir</button>
+            </div>
+
+            <!-- Place to Visit -->
+            <div class="card">
+                <img src="../files/image_marrakech/Guide Marrakech 2025 pdf gratuit_  59 incontournables à Marrakech.jfif">
+                <h3>Lieux à Visite</h3>
+                <p>Marrakech, c’est l’énergie de Jemaa el-Fna, les couleurs du Jardin Majorelle et la beauté des palais El Badi et Bahia.</p>
+                <button onclick="location.href='#lieux'">Découvrir</button>
+            </div>
+
+        </div>
+
+        <!--next part-->
+        <!--activite-->
+         <h3 class="detail-title" id="Activités">Activités</h3>
+        <section id="activite" class="slider-section">
+            <div class="slider1">
+                <div class="slides1">
+
+                    <div class="slide active">
+                        <img src="../files/image_marrakech/Jemaa el-Fna.jfif">
+                        <div class="slide-content">
+                            <h2>Jemaa el-Fna</h2>
+                            <p>La Place Jemaa el-Fna est le cœur vibrant et emblématique de Marrakech. Plus qu'une
+                                simple place, c'est un théâtre populaire vivant, inscrit au Patrimoine culturel
+                                immatériel de l'humanité par l'UNESCO.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_marrakech/Palais Bahia, Marrakech --Remember this from Kuu's Maroc photobook_.jfif">
+                        <div class="slide-content">
+                            <h2>palais el bahia</h2>
+                            <p>Le Palais de la Bahia (qui signifie "palais de la belle" ou "palais de la favorite") est
+                                l'un des monuments les plus célèbres et les plus visités de Marrakech.
+
+                                C'est un chef-d'œuvre de l'architecture marocaine de la fin du XIXe siècle, réputé pour
+                                la richesse et la finesse de sa décoration.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_marrakech/Jardin Majorelle Marrakech.jfif">
+                        <div class="slide-content">
+                            <h2>jardin Majorelle</h2>
+                            <p>Le Jardin Majorelle est une oasis botanique d'une intense beauté, célèbre dans le monde
+                                entier pour son bleu cobalt éclatant. Il abrite une collection spectaculaire de plantes
+                                exotiques et l'ancien atelier de l'artiste Jacques Majorelle.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_marrakech/jardin secret.jfif">
+                        <div class="slide-content">
+                            <h2>Jardin secret</h2>
+                            <p>Le Jardin Secret est un ensemble historique restauré au cœur de la Médina, offrant une
+                                oasis de calme et de verdure. Il est composé de deux magnifiques jardins, un exotique et
+                                un islamique, entourant un somptueux palais.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_marrakech/Palais El Badii.jfif">
+                        <div class="slide-content">
+                            <h2>Palais el Badii</h2>
+                            <p>Le Palais El Badii (le "Palais de l'Incomparable") est aujourd'hui une vaste ruine
+                                historique qui témoigne de la splendeur de l'ère Saâdienne. Construit au XVIe siècle, il
+                                est célèbre pour ses immenses cours, ses bassins et son passé de faste incomparable.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_marrakech/jardin ANIMA.jfif">
+                        <div class="slide-content">
+                            <h2>jardin ANIMA</h2>
+                            <p>Le Jardin Anima est un jardin artistique et d'éden créé par André Heller, situé juste à
+                                l'extérieur de Marrakech. C'est un lieu féérique où se mêlent plantes exotiques
+                                luxuriantes et œuvres d'art contemporaines sur fond d'Atlas enneigé. .</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="arrow arrow-left">&#10094;</button>
+                <button class="arrow arrow-right">&#10095;</button>
+            </div>
+
+            <!--resto-->
+        </section>
+         <h3 class="detail-title" id="Restaurants">Restaurants</h3>
+        <section id="restaurant" class="slider-section">
+
+            <div class="slider1">
+                <div class="slides1">
+
+                    <div class="slide active">
+                        <img src="../files/image_marrakech/Dar el Bacha, Marrakech Morocco.jfif">
+                        <div class="slide-content">
+                            <h3>dar el bacha</h3>
+                            <p>Dar El Bacha est un ancien palais magnifiquement restauré, autrefois résidence du Pacha
+                                Thami El Glaoui. Il est désormais célèbre pour être le Musée des Confluences et abrite
+                                le Bacha Coffee, un café historique réputé pour son cadre somptueux et ses variétés de
+                                café du monde.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_marrakech/MANZAH L'KOUTOUBIA, Marrakech - Menu, Prix & Restaurant Avis - Tripadvisor.jfif"
+                            alt="MANZAH L'KOUTOUBIA">
+                        <div class="slide-content">
+                            <h3>MANZAH L'KOUTOUBIA</h3>
+                            <p>Le Menzah Koutoubia est un grand espace vert public et paisible situé juste derrière la
+                                célèbre Mosquée Koutoubia. C'est un lieu idéal pour une promenade, offrant des vues
+                                magnifiques sur le minaret historique et des allées ombragées.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_marrakech/La trattoria.jfif" alt="Palais Amani">
+                        <div class="slide-content">
+                            <h3>LA trattoria</h3>
+                            <p>La Trattoria est un restaurant italien de luxe à Marrakech, célèbre pour son cadre
+                                exceptionnel dans un riad élégant avec un magnifique patio centré autour d'une piscine.
+                                Il offre une cuisine italienne raffinée dans une atmosphère romantique et paisible.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_marrakech/res jamm fena.jfif">
+                        <div class="slide-content">
+                            <h3>Les "restaurants" de Jemaa el-Fna</h3>
+                            <p>Les "restaurants" de Jemaa el-Fna ne sont pas des établissements permanents, mais des
+                                stands de nourriture éphémères (appelés "guergour" ou numérotés) qui s'installent chaque
+                                soir. Ils offrent une expérience culinaire populaire et animée, proposant des
+                                brochettes, des tajines, des escargots et des spécialités locales dans une ambiance
+                                festive et fumante.</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <button class="arrow arrow-left">&#10094;</button>
+                <button class="arrow arrow-right">&#10095;</button>
+            </div>
+        </section>
+
+        <!--place to visit-->
+        <h3 class="detail-title" id="Hébergement">Hébergement</h3>
+        <section id="lieux" class="slider-section">
+
+            <div class="slider1">
+                <div class="slides1">
+                    <div class="slide active">
+                        <img src="../files/image_marrakech/La Maison Arabe, riad hôtel à Marrakech.jfif" alt="Maison Arabe">
+                        <div class="slide-content">
+                            <h3>Maison Arabe</h3>
+                            <p>C'est noté. Voici la description courte (en français) de La Maison Arabe :
+
+                                La Maison Arabe est un hôtel de luxe historique à Marrakech, réputé pour son
+                                raffinement, son service exceptionnel et ses deux piscines. Il fut le premier riad-hôtel
+                                de la Médina et est célèbre pour son restaurant gastronomique et ses ateliers de cuisine
+                                marocaine.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="../files/image_marrakech/RIAD ANDALLASPA - Updated 2024 Prices & Hotel Reviews (Marrakech, Morocco).jfif"
+                            alt="Riad Andalusa">
+                        <div class="slide-content">
+                            <h3>Riad Andalusa</h3>
+                            <p>Le Riad Andalusa est un riad de charme situé au cœur de la Médina, offrant une ambiance
+                                chaleureuse et authentique. Il est apprécié pour son architecture traditionnelle
+                                andalouse, son patio paisible et son excellent rapport qualité-prix.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="../files/image_marrakech/Mandarin Oriental Marrakech_ The Perfect Desert Oasis _ WeWanderlustCo.jfif"
+                            alt="La Mandarin Oriental">
+                        <div class="slide-content">
+                            <h3>La Mandarin Oriental</h3>
+                            <p>Le Mandarin Oriental Marrakech est un palace de luxe réputé pour son service d'exception
+                                et son cadre spectaculaire, à l'extérieur de la ville. Il propose des villas privées
+                                avec piscine et des suites, entourées de vastes jardins d'oliviers et de vues
+                                imprenables sur les montagnes de l'Atlas.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="../files/image_marrakech/mamounia.jfif" alt="la mamounia">
+                        <div class="slide-content">
+                            <h3>la mamounia</h3>
+                            <p>La Mamounia est le palace le plus emblématique et légendaire de Marrakech, mondialement
+                                reconnu pour son luxe absolu et ses jardins somptueux. C'est une institution hôtelière
+                                qui a accueilli des figures historiques et offre une expérience d'opulence incomparable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="../files/image_marrakech/siwan.jfif" alt="Riad Siwan">
+                        <div class="slide-content">
+                            <h3>Riad Siwan</h3>
+                            <p>Le Riad Siwan est un charmant riad niché dans la Médina, réputé pour son atmosphère
+                                intime et son design traditionnel mêlant confort moderne et artisanat marocain. Il offre
+                                une oasis de tranquillité avec un service personnalisé et un beau patio..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="arrow arrow-left">&#10094;</button>
+                <button class="arrow arrow-right">&#10095;</button>
+            </div>
+        </section>
+        <!--rent -->
+       <h3 class="detail-title" id="Endroits-title">Endroits</h3>
+
+        <section id="rent" class="slider-section">
+
+            <div class="slider1">
+
+
+                <div class="slides1">
+                    <div class="slide active">
+                        <img src="../files/image_marrakech/ourika.jfif" alt="ourika">
+                        <div class="slide-content">
+                            <h3>ourika</h3>
+                            <p>La Vallée de l'Ourika est une magnifique vallée verdoyante située dans les montagnes du
+                                Haut Atlas, facilement accessible depuis Marrakech. C'est une destination populaire pour
+                                ses paysages pittoresques, ses villages berbères traditionnels, et ses petites cascades
+                                rafraîchissantes.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_marrakech/Cascades d'Ouzoud, Maroc.jfif" alt="Cascades d'Ouzoud">
+                        <div class="slide-content">
+                            <h3>Cascades d'Ouzoud</h3>
+                            <p>les Cascades d'Ouzoud sont les chutes d'eau les plus hautes et les plus spectaculaires du
+                                Maroc, atteignant plus de 100 mètres de hauteur. Situées dans le Moyen Atlas, elles sont
+                                un lieu d'excursion populaire, réputé pour ses arcs-en-ciel, sa végétation luxuriante et
+                                la présence de singes Magots..</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="../files/image_marrakech/Agafay luxury camp.jfif" alt="le Desert d'Agafay">
+                        <div class="slide-content">
+                            <h3>le Desert d'Agafay</h3>
+                            <p>Le Désert d'Agafay n'est pas un désert de sable, mais une étendue aride et rocailleuse
+                                aux paysages vallonnés, située à seulement 30 km de Marrakech. Il est devenu célèbre
+                                comme lieu d'excursion pour des activités (quad, dromadaire) et des campements de luxe
+                                offrant une vue spectaculaire sur l'Atlas.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="../files/image_marrakech/imlil.jfif" alt="Imlil">
+                        <div class="slide-content">
+                            <h3>Imlil</h3>
+                            <p>Imlil est un petit village de montagne pittoresque situé au cœur du Haut Atlas, servant
+                                de point de départ principal pour l'ascension du Toubkal, le plus haut sommet d'Afrique
+                                du Nord. C'est un centre de randonnée célèbre, connu pour ses paysages spectaculaires et
+                                son ambiance berbère authentique..</p>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <button class="arrow arrow-left">&#10094;</button>
+                <button class="arrow arrow-right">&#10095;</button>
+            </div>
+        </section>
+
+
+        <!--next-->
+        <section class="nearby-section">
+            <h2>EXPLORER LES ALENTOURS</h2>
+
+            <div class="cards">
+
+                <!-- CARD 1 -->
+                <div class="card1">
+                    <div class="image-box">
+                        <img src="../files/image_marrakech/Essaouira.jfif" >
+                        <span class="city-name">Essouira</span>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="left">
+                            <h3>Marrakech</h3>
+                            <p>Time 2 h 30 min</p>
+                            <p>Distance 170 KM</p>
+                            <h4>Essaouira</h4>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card1">
+                    <div class="image-box">
+                        <img src="../files/image_marrakech/Safi - Fan-au-Maroc.jfif" >
+                        <span class="city-name">Safi</span>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="left">
+                            <h3>Marrakech</h3>
+                            <p>Time 2 h 15 min</p>
+                            <p>Distance 150 KM</p>
+                            <h4>Safi</h4>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card1">
+                    <div class="image-box">
+                        <img src="../files/image_marrakech/Agadir (1).jfif" >
+                        <span class="city-name">Agadir</span>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="left">
+                            <h3>Marrakech</h3>
+                            <p>Time 2 h 30 min</p>
+                            <p>Distance 170 KM</p>
+                            <h4>Agadir</h4>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <!-- Bloc À propos -->
+        <div class="footlinks">
+            <h4 id="footer-about-title">Découvre le Maroc</h4>
+
+            <p id="footer-about-text">
+                Explorez la magie du Maroc avec nous. Des montagnes de l'Atlas aux dunes du Sahara,
+                nous vous guidons vers les meilleurs endroits.
+            </p>
+
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+
+        <!-- Bloc Liens rapides -->
+        <div class="footlinks">
+            <h4 id="footer-links-title">Liens Rapides</h4>
+
+           <ul>
+                <li><a id="footer-faq" href="../FAQ/FAQ.html">Questions fréquentes ?</a></li>
+                <li><a id="footer-home" href="../index-final.html">Accueil</a></li>
+                <li><a id="footer-villes" href="../index-final.html#ville">Villes</a></li>
+                <li><a id="footer-about" href="../pages_agence/about-1.html">À propos</a></li>
+                <li><a id="footer-contact" href="../pages_agence/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Contact -->
+        <div class="footlinks">
+            <h4 id="footer-contact-title">Contact</h4>
+
+            <ul>
+                <li><a id="footer-address" href="#"><i class='bx bxs-map'></i> Casablanca, Maroc</a></li>
+                <li><a id="footer-phone" href="#"><i class='bx bxs-phone'></i> +212 600 000 000</a></li>
+                <li><a id="footer-email" href="#"><i class='bx bxs-envelope'></i> info@maroctrip.ma</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Newsletter -->
+        <div class="footlinks">
+            <h4 id="footer-newsletter-title">Newsletter</h4>
+
+            <p id="footer-newsletter-text">
+                Abonnez-vous pour recevoir nos meilleures offres.
+            </p>
+
+            <form>
+                <input type="email" class="newsletter-input" placeholder="Votre Email"
+                       id="newsletter-input" aria-label="Email pour la newsletter">
+
+                <button type="button" class="newsletter-btn" id="newsletter-btn">
+                    S'abonner
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p id="footer-copy">&copy; 2025 Découvre le Maroc. Tous droits réservés.</p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvre le Maroc</title>
+    <link rel="icon" href="./files/logo.png">
+    <link rel="stylesheet" type="text/css" href="./css/style-final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+    <nav>
+        <img src="./files/logo.png" class="logo" alt="Logo" title="Découvre le Maroc">
+
+        <div class="links">
+                <ul class="navbar">
+                    <li><a id="nav-home" href="./index-final.html" class="active">Accueil</a></li>
+                    <li><a id="nav-ville" href="./index-final.html#ville">Villes</a></li>
+                    <li><a id="nav-contact" href="./pages_agence/contact.html">Contact</a></li>
+
+                    <!-- Recherche -->
+                    <li>
+                        <div class="search-container">
+                            <i class='bx bx-search' id="searchIcon"></i>
+                            <input type="text" id="searchInput" placeholder="Rechercher...">
+                        </div>
+                    </li>
+
+                    <!-- Météo -->
+                    <li class="weather-wrapper">
+                        <button id="showWeatherBtn" class="weather-toggle">Météo</button>
+
+                        <div class="weather-card" id="weatherCard" style="display: none;">
+                            <h2 id="weather-title">Météo</h2>
+                            <input type="text" id="city" placeholder="Entrez une ville">
+                            <button id="btn">Chercher</button>
+                            <div id="result"></div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <select id="langSelect">
+                            <option value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</header>
+    <div class="banner" id="home">
+        <video src="./files/QVTME0276.MOV" type="video/MOV" autoplay muted loop></video>
+        <div class="title">
+            <h1 id="main-title">Découvre le Maroc</h1>
+            <p id="main-intro">
+                Le Maroc t’invite à découvrir ses villes colorées, ses paysages variés et une hospitalité unique.
+            </p>
+        </div>
+    </div>
+
+    <section class="section-maroc">
+
+    <h2 class="maroc-title" id="maroc-title">À la Découverte du Maroc</h2>
+
+    <div class="maroc-container">
+
+        <div class="maroc-content">
+            <p class="Intro-maroc" id="Intro-maroc">
+                <span>Le Maroc</span> est un pays d’une grande diversité, où se côtoient océan, montagnes
+        et désert, du bord de l’Atlantique et de la Méditerranée jusqu’aux dunes du Sahara. Chaque région raconte une
+        facette différente : <span>Marrakech</span>, la ville ocre, séduit par sa médina vibrante, ses jardins et ses
+        riads, tandis que <Fès>Fès</span> et <span>Rabat</span> mettent en lumière leur héritage culturel entre vieille
+            médina et capitale ouverte sur l’océan. Plus au sud-est, <span>Ouarzazate</span>, <span>Tinghir</span> et
+            <span>Merzouga</span> offrent un décor de kasbahs en terre, d’oasis, de gorges impressionnantes et de dunes
+            dorées idéales pour les balades et les bivouacs sous les étoiles. Sur la côte, <span>Agadir</span> et
+            <span>Dakhla</span> combinent plages ensoleillées et sports nautiques, alors que <span>Chefchaouen</span>,
+            nichée dans les montagnes du Rif, enchante avec ses maisons bleues et son atmosphère douce et tranquille.
+            </p>
+        </div>
+        <div class="maroc-image">
+            <img src="files/maroc1.jpg" alt="Drapeau du Maroc">
+        </div>
+    </div>
+</section>
+    
+
+
+<section class="cities-section" id="ville">
+    <div class="section-title">
+        <h2 id="title-ville">Villes</h2>
+    </div>
+
+    <div class="cards-container" role="list">
+        
+        <!-- Rabat -->
+        <a href="villes/rabat.html" target="_blank" class="card-link" role="listitem">
+            <article class="city-card">
+                <div class="card-tag" id="tag-rabat">Capital</div>
+                <img src="./files/image_rabat/hassan.jpg" alt="Vue de Rabat" loading="lazy">
+                <div class="card-overlay">
+                    <p id="desc-rabat">Ville Impériale</p>
+                    <h3 id="city-rabat">Rabat</h3>
+                    <div class="card-btn" id="btn-rabat">Visiter</div>
+                </div>
+            </article>
+        </a>
+
+        <!-- Chefchaouen -->
+        <a href="./villes/chefchaouen.html" target="_blank" class="card-link" role="listitem">
+            <article class="city-card">
+                <div class="card-tag" id="tag-chefchaouen">Montagne</div>
+                <img src="./files/image_chefchaouen/chefchaouen (2).jpg" alt="Ruelle bleue de Chefchaouen" loading="lazy">
+                <div class="card-overlay">
+                    <p id="desc-chefchaouen">La Perle Bleue</p>
+                    <h3 id="city-chefchaouen">Chefchaouen</h3>
+                    <div class="card-btn" id="btn-chefchaouen">Visiter</div>
+                </div>
+            </article>
+        </a>
+
+        <!-- Marrakech -->
+        <a href="./villes/marrakech.html" target="_blank" class="card-link" role="listitem">
+            <article class="city-card">
+                <div class="card-tag" id="tag-marrakech">Culture</div>
+                <img src="./files/image_marrakech/Jemaa el-Fna.jfif" alt="Place Jemaa el-Fna Marrakech" loading="lazy">
+                <div class="card-overlay">
+                    <p id="desc-marrakech">La Ville Rouge</p>
+                    <h3 id="city-marrakech">Marrakech</h3>
+                    <div class="card-btn" id="btn-marrakech">Visiter</div>
+                </div>
+            </article>
+        </a>
+        
+        <!-- Fès -->
+        <a href="villes/fes.html" target="_blank" class="card-link" role="listitem">
+            <article class="city-card">
+                <div class="card-tag" id="tag-fes">Histoire</div>
+                <img src="./files/image_fes/Fez, Morocco_ An Aerial View of the Medina.jpg" alt="Médina de Fès" loading="lazy">
+                <div class="card-overlay">
+                    <p id="desc-fes">Capitale Spirituelle</p>
+                    <h3 id="city-fes">Fès</h3>
+                    <div class="card-btn" id="btn-fes">Visiter</div>
+                </div>
+            </article>
+        </a>
+
+        <!-- Ouarzazate -->
+        <a href="./villes/Ouarzazate-Tinghir-Merzouga.html" target="_blank" class="card-link" role="listitem">
+            <article class="city-card">
+                <div class="card-tag" id="tag-ouarzazate">Désert</div>
+                <img src="./files/image_ouarzazate/aitbenhadou.jpg" alt="Kasbah Ait Ben Haddou" loading="lazy">
+                <div class="card-overlay">
+                    <p id="desc-ouarzazate">Porte du Désert</p>
+                    <h3 id="city-ouarzazate">Ouarzazate</h3>
+                    <div class="card-btn" id="btn-ouarzazate">Visiter</div>
+                </div>
+            </article>
+        </a>
+
+        <!-- Dakhla -->
+        <a href="./villes/dakhla.html" target="_blank" class="card-link" role="listitem">
+            <article class="city-card">
+                <div class="card-tag" id="tag-dakhla">Surf</div>
+                <img src="./files/image_dakhla/dakhla.jpg" alt="Plage de Dakhla" loading="lazy">
+                <div class="card-overlay">
+                    <p id="desc-dakhla">Perle du Sud</p>
+                    <h3 id="city-dakhla">Dakhla</h3>
+                    <div class="card-btn" id="btn-dakhla">Visiter</div>
+                </div>
+            </article>
+        </a>
+
+        <!-- Agadir -->
+        <a href="villes/agadir.html" target="_blank" class="card-link" role="listitem">
+            <article class="city-card">
+                <div class="card-tag" id="tag-agadir">Plage</div>
+                <img src="./files/image_agadir/ouflla.jpg" alt="Plage d'Agadir" loading="lazy">
+                <div class="card-overlay">
+                    <p id="desc-agadir">Soleil et Mer</p>
+                    <h3 id="city-agadir">Agadir</h3>
+                    <div class="card-btn" id="btn-agadir">Visiter</div>
+                </div>
+            </article>
+        </a>
+
+    </div>
+</section>
+
+
+
+     <section id="slider-3d">
+    <h2 class="slider-title" id="slider-title">Cuisine marocaine: authenticité et raffinement</h2>
+
+
+    <div class="slider3d-container">
+
+        <div class="ring">
+            <div class="img">
+                <img src="./files/couscous.jpg">
+                <p>Couscous marocain</p>
+            </div>
+            <div class="img">
+                <img src="./files/tajine.webp">
+                <p>Tajine marocain</p>
+            </div>
+            <div class="img">
+                <img src="./files/bastila.jpg">
+                <p>Bastilla</p>
+            </div>
+            <div class="img">
+                <img src="./files/les gataux.jpg">
+                <p>Les Gâteaux marocains</p>
+            </div>
+            <div class="img">
+                <img src="./files/seffa-medfouna-au-poulet_340_1.jpg">
+                <p>Seffa medfouna</p>
+            </div>
+            <div class="img">
+                <img src="./files/djaj-mhamar-2.jpg">
+                <p>Djaj Mhamar</p>
+            </div>
+        </div>
+
+        <!-- Flèches après les images -->
+        <div class="controls bottom-controls">
+            <button id="prev">◀</button>
+            <button id="next">▶</button>
+        </div>
+
+    </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <!-- Bloc À propos -->
+        <div class="footlinks">
+            <h4 id="footer-about-title">Découvre le Maroc</h4>
+
+            <p id="footer-about-text">
+                Explorez la magie du Maroc avec nous. Des montagnes de l'Atlas aux dunes du Sahara,
+                nous vous guidons vers les meilleurs endroits.
+            </p>
+
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+
+        <!-- Bloc Liens rapides -->
+        <div class="footlinks">
+            <h4 id="footer-links-title">Liens Rapides</h4>
+
+            <ul>
+                <li><a id="footer-faq" href="./FAQ/FAQ.html">Questions fréquentes ?</a></li>
+                <li><a id="footer-home" href="#top">Accueil</a></li>
+                <li><a id="footer-villes" href="#ville">Villes</a></li>
+                <li><a id="footer-about" href="./pages_agence/about-1.html">À propos</a></li>
+                <li><a id="footer-contact" href="./pages_agence/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Contact -->
+        <div class="footlinks">
+            <h4 id="footer-contact-title">Contact</h4>
+
+            <ul>
+                <li><a id="footer-address" href="#"><i class='bx bxs-map'></i> Casablanca, Maroc</a></li>
+                <li><a id="footer-phone" href="#"><i class='bx bxs-phone'></i> +212 600 000 000</a></li>
+                <li><a id="footer-email" href="#"><i class='bx bxs-envelope'></i> info@maroctrip.ma</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Newsletter -->
+        <div class="footlinks">
+            <h4 id="footer-newsletter-title">Newsletter</h4>
+
+            <p id="footer-newsletter-text">
+                Abonnez-vous pour recevoir nos meilleures offres.
+            </p>
+
+            <form>
+                <input type="email" class="newsletter-input" placeholder="Votre Email"
+                       id="newsletter-input" aria-label="Email pour la newsletter">
+
+                <button type="button" class="newsletter-btn" id="newsletter-btn">
+                    S'abonner
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p id="footer-copy">&copy; 2025 Découvre le Maroc. Tous droits réservés.</p>
+    </div>
+</footer>
+
+
+<script src="./javaScript/script-final.js"></script>
+</body>
+
+</html>

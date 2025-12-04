@@ -1,0 +1,473 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.slides {
+    height: 700px;
+    width: 100%;
+    background-size: 100% 100%;
+    box-shadow: 20px 20px 10px gainsboro;
+    animation: slider 12s linear infinite;
+    z-index: 2;
+    color: white;
+
+    /* AJOUT IMPORTANT */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;     
+
+    padding: 20px;
+}
+
+@keyframes slider {
+    0%{
+        background-image: url("../files/image_fes/amandier-palais-restaurant-fes-rooftop.webp");
+    }
+    30%{
+        background-image: url("../files/image_fes/good1.jpg");
+
+    }
+    60%{
+        background-image: url("../files/image_fes/Borj-Nord-a-Fes-Maroc2.webp");
+
+    }
+    100%{
+        background-image: url("../files/image_fes/Fes-el-Bali.jpg");
+
+    }
+    
+}
+
+
+
+
+.slides h1 {
+    font-size: 60px; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    
+}
+
+.slides p {
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+/* paragraph + comment part*/
+.paragraph{
+   
+    margin: 80px 10px ;
+    padding:10px ;
+    background-color: rgba(227, 197, 197, 0.199);
+    border-radius: 20px;
+}
+
+/* Two Column Layout */
+
+.two-column-layout {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    align-items: flex-start;
+    padding: 65px 3px;
+    
+}
+
+/* Text Column */
+.description-text {
+    flex: 2;
+    font-size:20px;
+    line-height: 1.5em;
+    margin:0px 20px;
+}
+
+.highlight {
+    font-weight: bold;
+    color:  rgb(166, 48, 48);
+    font-size:40px ;
+}
+
+/* Testimonial Box */
+.comments-grid {
+    flex: 1;
+    background-color: #f7f3ed;
+    border: 1px solid #e0d0c0;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative;
+  
+}
+.author-image-placeholder img{
+   width: 60px;
+   height: 60px;
+ 
+  
+}
+
+.quote {
+    font-family: serif;
+    font-size: 3em;
+    color: #d1b48c;
+    margin: 0;
+    line-height: 0.5;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+
+ .comment-card{
+    font-style: italic;
+    font-size: 1em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+   
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 2px;
+}
+
+
+
+.author-name {
+
+    color: #555;
+    font-size: x-large;
+    padding-left: 10px;
+}
+div p b{
+  color: rgb(166, 48, 48);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .two-column-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* guide */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+    padding: 0px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 20%;
+    background: rgba(244, 225, 210, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 25px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #555;
+    flex-grow: 1;
+    min-height: 40px;
+}
+
+.card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #a03815;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+
+    align-self: center;
+}
+
+.card button:hover {
+    background: #fc5c3b;
+}
+@media (max-width: 800px) {
+ .cards-container .card{
+    grid-template-columns: repeat(2, 1fr); 
+    justify-items: center; 
+  }
+.cards-container .card {
+    width: 90%;              
+    max-width: 250px;        
+  }
+}
+
+/*next part*/
+
+/* Style for the section containing the slider */
+.slider-section {
+  display: flex;
+  justify-content: center;
+  padding: 10px;   
+  background-color: #f5f5f5;
+ 
+}
+
+.slider1 {
+      padding: 30px;
+  width: 95%;
+  height: 330px;    
+  margin: 40px;
+  background: #ddd3d359;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center; 
+}
+.slider1 img {
+  width: 400px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+.slide-content {
+  /*flex: 1;*/
+  width: 50%;
+  
+}
+.slide-content h2 {
+  margin: 0 0 10px;
+  font-size: 25px;
+  color: #333;
+}
+.slide-content p{
+  white-space: pre-line;
+   margin: 0;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(209, 7, 7, 0.5);
+   width: 35px;
+    height: 38px;
+  color: #fcfafae3;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: 0.3s ease, transform 0.2s ease;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+.arrow:hover {
+    background: #d2634dcb;
+}
+
+
+.slides1 {
+
+ display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.slide {
+ 
+
+    min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+@media (max-width: 480px) {
+    
+   .slide img { width: 200px; height: 160px; }
+  .slide-content { width: 50%; }
+  .slide-content p { font-size: 14px; } 
+}
+
+  /*neeeeext*/
+/* MAIN SECTION */
+.nearby-section {
+    background: #6d1313;
+    margin: 30px;
+    padding: 70px 70px;
+    text-align: center;
+    Font-family: "Georgia", serif;
+    border-radius: 12px;
+}
+
+
+    
+
+.nearby-section h2 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+/* CARD CONTAINER */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    
+   
+}
+
+/* CARD */
+.card1 {
+    width: 25%;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* IMAGE BOX */
+.image-box {
+    position: relative;
+   
+}
+
+.card1 img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+/* CITY NAME (on the image) */
+.city-name {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.7);
+}
+
+/* INFO BOX */
+.info-box {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.info-box h3 {
+    margin: 0;
+    color: #0a5d63;
+    font-size: 18px;
+}
+
+.info-box p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #444;
+   
+}
+
+.info-box h4 {
+    margin-top: 12px;
+    color: #c3471c;
+    font-size: 18px;
+}
+
+
+
+/* RESPONSIVE — MOBILE */
+@media (max-width: 800px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1 {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+ .detail-title, .cities-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px auto 20px;
+    color: #6d1313;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+     scroll-margin-top: 120px;
+}
+
+.detail-title::after, .cities-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: gray;
+    border-radius: 999px;
+    margin: 8px auto 0;
+}
+

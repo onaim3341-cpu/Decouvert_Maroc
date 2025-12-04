@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakhla Maroc</title>
+    <link rel="icon" href="../files/logo.png">
+    
+    <link rel="stylesheet" type="text/css" href="../css/dakhla.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body class="location-body">
+    <script src="../javaScript/script_dakhla.js"></script>
+    <script src="../javaScript/script-final.js"></script>
+    <header>
+    <nav>
+        <img src="../files/logo.png" class="logo" alt="Logo" title="Découvre le Maroc">
+
+        <div class="links">
+                <ul class="navbar">
+                    <li><a id="nav-home" href="../index-final.html" class="active">Accueil</a></li>
+                    <li><a id="nav-ville" href="../index-final.html#ville">Villes</a></li>
+                    <li><a id="nav-contact" href="../pages_agence/contact.html">Contact</a></li>
+
+                    <!-- Recherche -->
+                    <li>
+                        <div class="search-container">
+                            <i class='bx bx-search' id="searchIcon"></i>
+                            <input type="text" id="searchInput" placeholder="Rechercher...">
+                        </div>
+                    </li>
+
+                    <!-- Météo -->
+                    <li class="weather-wrapper">
+                        <button id="showWeatherBtn" class="weather-toggle">Météo</button>
+
+                        <div class="weather-card" id="weatherCard" style="display: none;">
+                            <h2 id="weather-title">Météo</h2>
+                            <input type="text" id="city" placeholder="Entrez une ville">
+                            <button id="btn">Chercher</button>
+                            <div id="result"></div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <select id="langSelect">
+                            <option value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</header>
+    <main>
+
+        <!-- SLIDER -->
+        <section class="slider1">
+            <div class="slide1">
+                <h1>Bienvenue à Dakhla</h1>
+                <p>la perle du sud du Maroc</p>
+                <img src="../files/image_dakhla/Dakhla (1).jpg" alt="dakhla">
+            </div>
+
+            <div class="slide1">
+                <h1>Bienvenue à Dakhla</h1>
+                <p>la perle du sud du Maroc</p>
+                <img src="../files/image_dakhla/dakhla.jpg" alt="la plage">
+            </div>
+
+            <div class="slide1">
+                <h1>Bienvenue à Dakhla</h1>
+                <p>la perle du sud du Maroc</p>
+                <img src="../files/image_dakhla/desert.png" alt="desert">
+            </div>
+
+            <div class="slide1">
+                <h1>Bienvenue à Dakhla</h1>
+                <p>la perle du sud du Maroc</p>
+                <img src="../files/image_dakhla/-Dakhla-au-Maroc.jpg" alt="">
+            </div>
+            <div class="slide1">
+                <h1>Bienvenue à Dakhla</h1>
+                <p>la perle du sud du Maroc</p>
+                <img src="../files/image_dakhla/shrawa.webp" alt="">
+            </div>
+        </section>
+<section class="section1 ">
+    <h1 class="h1">DAKHLA, l'âme libre de Sahara</h1>
+    <div class="bloc-texte-image">
+        <div class="descr">
+<span style="color:rgb(218, 218, 23); font-size:x-large">Dakhla</span>, est un petit bout de paradis au sud du Maroc, perdu entre les eaux de l'Atlantique et les sables du Sahara. S'y trouver est un délice à consommer sans modération. Des kilomètres de plages s'étendent de par et d'autre de la ville : l'occasion de se délasser, l'occasion également de se livrer à toutes sortes d'activités nautiques. Ces rivages sont parmi les plus beaux du Maroc. Isolés du monde par le désert environnant, ils sont un véritable havre de paix, l'endroit idéal pour se prélasser, sous un soleil à 25 degrés toute l'année. Dans les alentours, deux plages sont particulièrement fameuses, celle de PK25 et celle de Foum El Bouir. La première est prisée des amateurs de farniente : c'est un lieu de détente, où l'on se baigne tranquillement au milieu des eaux calmes et cristallines de la lagune, tandis qu'à Foum El Bouir, l'ambiance est plus animée. C'est un site voué aux plaisirs de la glisse. Surfeurs, kitesurfeurs et windsurfeurs, qu'ils soient amateurs ou professionnels, se retrouvent ici, se laissent porter par les vagues et les vents. Plus loin, la pointe de Dragon est un autre spot internationalement réputé : les déferlantes y sont impressionnantes et les plus fameux surfeurs se sont déjà engouffrés dans ces tubes spectaculaires qui se déroulent sur des centaines de mètres. Porte du désert, ouvrant sur l'Afrique subsaharienne, Dakhla est aussi et surtout une porte du paradis !
+        </div>
+        <div class="image">
+            <img src="../files/image_dakhla/ChatGPT Image 14 nov. 2025, 10_32_30.png" alt="Dakhla paysage">
+        </div>
+    </div>
+</section>
+
+
+        <!-- CARDS -->
+        <section class="cities">
+            <h2 class="cities-title">Vivre l’Essence de Dakhla</h2>
+
+            <div class="cities-container">
+                <div class="city-card">
+                    <img src="../files/image_dakhla/place2.jpg" alt="">
+                    <h3>Endroits </h3>
+                    <button onclick="location.href='#lieux'">Découvrir</button>
+                </div>
+
+                <div class="city-card">
+                    <img src="../files/image_dakhla/ACTIVITE.jpg" alt="Hébergement">
+                    <h3>Activités</h3>
+                    <button onclick="location.href='#activite'">Découvrir</button>
+                </div>
+
+                <div class="city-card">
+                    <img src="../files/image_dakhla/hebergement.jpg" alt="heb">
+                    <h3>Hébergement</h3>
+                    <button onclick="location.href='#hebergement'">Découvrir</button>
+                </div>
+
+                <div class="city-card">
+                    <img src="../files/image_dakhla/Restaurent.webp" alt="res">
+                    <h3>Restaurants</h3>
+                    <button onclick="location.href='#restaurant'">Découvrir</button>
+                </div>
+            </div>
+        </section>
+
+        <h3 class="detail-title" id="Endroits-title">Endroits</h3>
+        <section id="lieux" class="detail-section">
+            <div class="detail-container">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="slide-track">
+
+                    <div class="slide active">
+                        <img src="../files/image_dakhla/lieu2.jpg" alt="">
+                        <div class="detail-text">
+                            <h2>L'île perdue de Dakhla</h2>
+                            <p>Un banc de sable immaculé émerge des eaux turquoise de la lagune de Dakhla, offrant un paysage naturel et sauvage où le calme et la beauté se rencontrent. Un lieu isolé, presque irréel, façonné par la mer et le vent.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_dakhla/place2.jpg" alt="">
+                        <div class="detail-text">
+                            <h2>Falaises du Dragon – Dakhla</h2>
+                            <p>Depuis les hauteurs des falaises, la vue s’ouvre sur un paysage spectaculaire où le désert rencontre l’océan. Les formes sculptées par les marées dessinent un décor naturel unique, offrant un panorama impressionnant et paisible à la fois.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_dakhla/place3.jpg" alt="">
+                        <div class="detail-text">
+                            <h2>Les dunes d’or de Dakhla</h2>
+                            <p>De majestueuses dunes de sable plongent doucement vers l’océan Atlantique, créant un contraste unique entre le désert et la mer. Un paysage saisissant où les visiteurs marchent au sommet des dunes, portés par la brise marine et la beauté infinie de Dakhla.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_dakhla/lieu3.avif" alt="">
+                        <div class="detail-text">
+                            <h2>Dakhla : L'Étreinte Dorée</h2>
+                            <p>Le soleil bas à l'horizon suggère un lever ou un coucher de soleil, baignant la scène d'une lumière chaude et douce, créant une ambiance de tranquillité et d'immensité.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- SECTION ACTIVITÉ -->
+        <section id="activite" class="detail-section">
+            <h3 class="detail-title" id="Activités">Activités</h3>
+            <div class="detail-container">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="slide-track">
+
+                    <div class="slide active">
+                        <img src="../files/image_dakhla/activite1.jpg" alt="">
+                        <div class="detail-text">
+                            <h2>Glisse sur les Vagues</h2>
+                            <p>Plongez dans l’aventure au cœur de Dakhla, où les eaux cristallines et les vents parfaits offrent des conditions idéales pour le surf. Que vous soyez débutant ou expert, chaque vague devient une invitation à sentir la liberté et l’énergie de l’océan Atlantique.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_dakhla/activite3.jpeg" alt="">
+                        <div class="detail-text">
+                            <h2>Glisse des Dunes</h2>
+                            <p>Vivez l’adrénaline autrement en dévalant les dunes dorées de Dakhla. Entre sable chaud et vent léger, le sandboarding transforme chaque pente en un terrain de jeu unique, où sensations fortes et paysages à couper le souffle se rencontrent.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_dakhla/activte2.webp" alt="">
+                        <div class="detail-text">
+                            <h2>Balade au Fil des Dunes</h2>
+                            <p>Partez à l’aventure sur le dos des chameaux et découvrez les paysages majestueux de Dakhla. Entre dunes dorées et horizons infinis, chaque pas devient une expérience unique, mêlant tranquillité, découverte et émerveillement.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_dakhla/activite4.webp" alt="">
+                        <div class="detail-text">
+                            <h2>Aventure Tout-Terrain</h2>
+                            <p>Foncez à toute vitesse sur les dunes dorées de Dakhla et laissez le vent vous guider dans cette aventure tout-terrain unique. Entre sensations fortes et paysages à couper le souffle, chaque virage devient un moment d’adrénaline et de liberté.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+        </section>
+
+        <!-- SECTION HÉBERGEMENT -->
+        <section id="hebergement" class="detail-section">
+            <h3 class="detail-title" id="Hébergement">Hébergement</h3>
+            <div class="detail-container">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="slide-track">
+
+                    <div class="slide active">
+                        <img src="../files/image_dakhla/hotel1.webp" alt="">
+                        <div class="detail-text">
+                            <h2>L’hôtel Dakhla South Bay</h2>
+                            <p>L’hôtel Dakhla South Bay est situé sur la plage de Dakhla et propose des chambres confortables et climatisées, certaines avec vue sur la mer, ainsi qu’une piscine extérieure et un spa pour se détendre. L’établissement dispose d’un restaurant servant une cuisine marocaine et internationale, et est réputé pour sa propreté et la qualité de son service. Grâce à son calme et sa proximité avec l’aéroport, il constitue un choix idéal pour les familles et les couples à la recherche d’un séjour paisible et agréable.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_dakhla/hotel2.jpg" alt="">
+                        <div class="detail-text">
+                            <h2>Inyan Dakhla Hotel</h2>
+                            <p>Inyan Dakhla Hotel est un hôtel confortable situé sur la rue Mohammed V à Dakhla, proche du centre-ville. Il propose des chambres propres avec salle de bain privée, Wi-Fi gratuit et télévision, certaines offrant une vue sur la mer. L’hôtel dispose d’un parking et d’un petit-déjeuner inclus, idéal pour les familles à un prix raisonnable.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_dakhla/hotel3.webp" alt="">
+                        <div class="detail-text">
+                            <h2>Lagon Energy Dakhla</h2>
+                            <p>Lagon Energy Dakhla est un éco-lodge à Dakhla, situé au bord du lagon. Il propose des bungalows confortables avec salle de bain privée et terrasse donnant sur l’eau. L’hôtel dispose d’une plage privée, d’un restaurant, d’un spa et d’une salle de sport, idéal pour se détendre et profiter de la nature et des activités nautiques.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- SECTION RESTAURANT -->
+        <section id="restaurant" class="detail-section">
+            <h3 class="detail-title" id="Restaurants">Restaurants</h3>
+            <div class="detail-container">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="slide-track">
+
+                    <div class="slide active">
+                        <img src="../files/image_dakhla/rest1.webp" alt="">
+                        <div class="detail-text">
+                            <h2>Le restaurant Villa Dakhla</h2>
+                            <p>Le restaurant Villa Dakhla, situé sur l’avenue Mohammed V à Dakhla, offre une superbe vue sur le front de mer. Il propose une cuisine variée, incluant des fruits de mer et des plats occidentaux et méditerranéens, dans un cadre calme adapté aux familles et aux amis. Très apprécié des visiteurs pour la qualité de sa cuisine et son ambiance agréable, il est ouvert tous les jours de midi à minuit.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_dakhla/res2.jpg" alt="">
+                        <div class="detail-text">
+                            <h2>Le restaurant TalhaMar</h2>
+                            <p>TalhaMar est un restaurant de fruits de mer à Dakhla, situé sur la plage de Plage Boutalha. Il est réputé pour ses fruits de mer frais comme le poisson grillé, les crevettes et les huîtres. Le cadre est simple et paisible, avec une vue sur la mer, offrant une excellente expérience de cuisine marine à des prix raisonnables.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="../files/image_dakhla/res3.webp" alt="">
+                        <div class="detail-text">
+                            <h2>Le restaurant Le Marin Pêcheur</h2>
+                            <p>Le restaurant Le Marin Pêcheur à Dakhla propose des fruits de mer frais dans une ambiance décontractée avec vue sur la mer. Il est réputé pour sa grande variété de poissons et de fruits de mer, son excellent service et son décor traditionnel qui reflète l'authenticité locale.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow right">&#10095;</button>
+            </div>
+        </section>
+
+    </main>
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <!-- Bloc À propos -->
+        <div class="footlinks">
+            <h4 id="footer-about-title">Découvre le Maroc</h4>
+
+            <p id="footer-about-text">
+                Explorez la magie du Maroc avec nous. Des montagnes de l'Atlas aux dunes du Sahara,
+                nous vous guidons vers les meilleurs endroits.
+            </p>
+
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+
+        <!-- Bloc Liens rapides -->
+        <div class="footlinks">
+            <h4 id="footer-links-title">Liens Rapides</h4>
+
+            <ul>
+                <li><a id="footer-faq" href="../FAQ/FAQ.html">Questions fréquentes ?</a></li>
+                <li><a id="footer-home" href="../index-final.html">Accueil</a></li>
+                <li><a id="footer-villes" href="../index-final.html#ville">Villes</a></li>
+                <li><a id="footer-about" href="../pages_agence/about-1.html">À propos</a></li>
+                <li><a id="footer-contact" href="../pages_agence/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Contact -->
+        <div class="footlinks">
+            <h4 id="footer-contact-title">Contact</h4>
+
+            <ul>
+                <li><a id="footer-address" href="#"><i class='bx bxs-map'></i> Casablanca, Maroc</a></li>
+                <li><a id="footer-phone" href="#"><i class='bx bxs-phone'></i> +212 600 000 000</a></li>
+                <li><a id="footer-email" href="#"><i class='bx bxs-envelope'></i> info@maroctrip.ma</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloc Newsletter -->
+        <div class="footlinks">
+            <h4 id="footer-newsletter-title">Newsletter</h4>
+
+            <p id="footer-newsletter-text">
+                Abonnez-vous pour recevoir nos meilleures offres.
+            </p>
+
+            <form>
+                <input type="email" class="newsletter-input" placeholder="Votre Email"
+                       id="newsletter-input" aria-label="Email pour la newsletter">
+
+                <button type="button" class="newsletter-btn" id="newsletter-btn">
+                    S'abonner
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p id="footer-copy">&copy; 2025 Découvre le Maroc. Tous droits réservés.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
