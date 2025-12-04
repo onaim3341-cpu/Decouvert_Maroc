@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Petite fonction utilitaire pour savoir si on est sur la page index
     function isOnIndexPage() {
         const path = window.location.pathname;
-        return path.endsWith("index-final.html") || path.endsWith("index-final.htm") || path.endsWith("index-final");
+        return path.endsWith("index.html") || path.endsWith("idex.htm") || path.endsWith("index");
     }
 
     // Fonction qui filtre les villes sur la page d'accueil
@@ -116,14 +116,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (isOnIndexPage()) {
                     performCitySearch(query);
                 } else {
-                    // Sinon → redirection vers index-final.html avec le mot recherché
+                    // Sinon → redirection vers index.html avec le mot recherché
 
                     const path = window.location.pathname;
-                    let indexPath = "index-final.html";
+                    let indexPath = "index.html";
 
                     // Si on est dans /villes/ ou autre sous-dossier → remonter d'un niveau
                     if (path.includes("/villes/")) {
-                        indexPath = "../index-final.html";
+                        indexPath = "../index.html";
                     }
 
                     const url = indexPath + "?search=" + encodeURIComponent(query) + "#ville";
